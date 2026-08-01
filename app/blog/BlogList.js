@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { posts } from '@/lib/posts'
 
@@ -26,8 +27,8 @@ export default function BlogList() {
       {featured && (
         <section className="inner-section pt-0">
           <div className="blog-featured">
-            <div className="blog-featured-thumb p-0 overflow-hidden">
-              <img src="/assets/blog.png" alt="Hybrid RAG 비교 실험" className="w-full h-full object-cover block" />
+            <div className="blog-featured-thumb p-0 overflow-hidden" style={{position:'relative'}}>
+              <Image src="/assets/blog.png" alt="Hybrid RAG 비교 실험" fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 100vw, 40vw" />
             </div>
             <div className="blog-featured-body">
               <span className="featured-label">★ FEATURED</span>
@@ -70,9 +71,9 @@ export default function BlogList() {
               const thumb = THUMB_CONFIG[post.category] || THUMB_CONFIG['RAG']
               return (
                 <article className="blog-card-v2 cursor-pointer" key={post.id} onClick={() => window.location.href=`/blog/${post.id}`}>
-                  <div className={`blog-thumb-v2${post.thumb ? ' overflow-hidden' : ''}`}>
+                  <div className={`blog-thumb-v2${post.thumb ? ' overflow-hidden' : ''}`} style={post.thumb ? {position:'relative'} : undefined}>
                     {post.thumb ? (
-                      <img src={post.thumb} alt={post.title} className="w-full h-full object-cover block" />
+                      <Image src={post.thumb} alt={post.title} fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 100vw, 33vw" />
                     ) : (
                       <>
                         <div className={`thumb-bg ${thumb.bg}`}></div>

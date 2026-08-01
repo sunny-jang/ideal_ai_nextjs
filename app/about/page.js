@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'About — 한양대 AI 석사 출신 전문가 팀',
   description: '한양대학교 AI 공학대학원 출신 석사 전문가들이 모여 만든 Ideal AI. NLP, RAG, LLM 파인튜닝, MLOps 전공 연구 경험을 실무에 직접 적용합니다.',
@@ -127,7 +129,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'-4%', top:'5%', bottom:'-5%', width:'50%', height:'100%'}} aria-hidden="true">
-          <img src="/assets/about top.png" alt="" className="hero-service-img w-full h-full object-contain" style={{objectPosition:'center right'}} />
+          <Image src="/assets/about top.png" alt="" fill style={{objectFit:'contain', objectPosition:'center right'}} sizes="50vw" priority />
         </div>
       </section>
 
@@ -189,9 +191,9 @@ export default function AboutPage() {
               <div className="tcv2-name">{member.name}</div>
               <div className="tcv2-role">{member.role}</div>
               <div className="tcv2-bio">{member.degree}<br />{member.spec}</div>
-              <div className="tcv2-degree-placeholder">
+              <div className="tcv2-degree-placeholder" style={{position:'relative'}}>
                 {member.degreeImg
-                  ? <img src={member.degreeImg} alt={`${member.name} 학위증`} className="w-full h-full object-cover" style={{borderRadius:10}} />
+                  ? <Image src={member.degreeImg} alt={`${member.name} 학위증`} fill style={{objectFit:'cover', borderRadius:10}} sizes="200px" />
                   : <span>학위증</span>
                 }
               </div>
@@ -212,7 +214,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mission-globe-wrap">
-            <img src="/assets/aboutmiddle.png" alt="" style={{width:'90%', maxWidth:520, objectFit:'contain'}} />
+            <Image src="/assets/aboutmiddle.png" alt="" width={520} height={400} style={{width:'90%', maxWidth:520, height:'auto', objectFit:'contain'}} />
           </div>
         </div>
 
@@ -254,7 +256,7 @@ export default function AboutPage() {
       <section className="inner-section pt-0">
         <div className="hanyang-dark">
           <div className="h-logo-col">
-            <img src="/assets/HYU_initial_basic.svg" alt="한양대학교" />
+            <Image src="/assets/HYU_initial_basic.svg" alt="한양대학교" width={44} height={44} />
             <span>HANYANG<br />UNIVERSITY</span>
           </div>
           <div className="h-content">
@@ -270,7 +272,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="h-building-col">
-            <img src="/assets/hanyang.png" alt="" className="w-full h-full object-cover object-center" />
+            <Image src="/assets/hanyang.png" alt="" width={500} height={400} style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center'}} />
           </div>
         </div>
       </section>

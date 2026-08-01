@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useRef, useEffect } from 'react'
 
 export default function HeroVisual() {
@@ -30,7 +31,7 @@ export default function HeroVisual() {
     <div className="hero-visual" aria-hidden="true">
       <div className="glow glow-one"></div>
       <div className="glow glow-two"></div>
-      <img ref={imgRef} src="/assets/hero-bubbles.png" alt="" />
+      <Image ref={imgRef} src="/assets/hero-bubbles.png" alt="" width={640} height={640} style={{width:'100%', height:'auto'}} priority />
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import BlogList from './BlogList'
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function BlogPage() {
           </p>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'3%', top:'5%', bottom:'-5%', width:'48%', height:'100%', WebkitMaskImage:'linear-gradient(to right, transparent 0%, black 18%, black 80%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%)', WebkitMaskComposite:'destination-in', maskImage:'linear-gradient(to right, transparent 0%, black 18%, black 80%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%)', maskComposite:'intersect'}} aria-hidden="true">
-          <img src="/assets/blog_hero2.png" alt="" className="hero-service-img w-full h-full object-contain object-right" />
+          <Image src="/assets/blog_hero2.png" alt="" fill style={{objectFit:'contain', objectPosition:'right'}} sizes="50vw" priority />
         </div>
       </section>
 

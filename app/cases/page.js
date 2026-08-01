@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Case Studies — 실제 AI 프로젝트 성공 사례',
   description: '실제 도입 시 어떤 문제를 해결할 수 있는지, 접근 방식과 기대 성과를 시나리오로 정리한 예시 케이스입니다.',
@@ -27,7 +29,7 @@ export default function CasesPage() {
           </div>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'3%', top:'-15%', bottom:'10%', width:'48%', height:'100%', WebkitMaskImage:'linear-gradient(to right, transparent 0%, black 18%, black 80%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%)', WebkitMaskComposite:'destination-in', maskImage:'linear-gradient(to right, transparent 0%, black 18%, black 80%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%)', maskComposite:'intersect'}} aria-hidden="true">
-          <img src="/assets/aboutmiddle.png" alt="" className="hero-service-img w-full h-full object-contain" style={{objectPosition:'center right'}} />
+          <Image src="/assets/aboutmiddle.png" alt="" fill style={{objectFit:'contain', objectPosition:'center right'}} sizes="50vw" priority />
         </div>
 
         {/* Impact numbers inside hero */}

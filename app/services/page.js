@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Services — AI 개발 · 자동화 · 컨설팅',
   description: 'AI Product Development, Process Automation, Data Engineering, AI Consulting — 기획부터 배포까지 평균 8주, 도입 후 업무 효율 평균 60% 향상.',
@@ -27,7 +29,7 @@ export default function ServicesPage() {
           </div>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'5%', top:'2%', bottom:'-8%', width:'66%', height:'110%'}} aria-hidden="true">
-          <img src="/assets/service_top.png" alt="" className="hero-service-img" style={{width:'100%', height:'100%', objectFit:'contain', objectPosition:'center right'}} />
+          <Image src="/assets/service_top.png" alt="" fill style={{objectFit:'contain', objectPosition:'center right'}} sizes="60vw" priority />
         </div>
       </section>
 
@@ -117,17 +119,17 @@ export default function ServicesPage() {
 
         {/* SERVICE IMAGES */}
         <div className="svc-img-strip">
-          <div className="svc-img-item">
-            <img src="/assets/service_01.png" alt="AI Product Development" />
+          <div className="svc-img-item" style={{position:'relative'}}>
+            <Image src="/assets/service_01.png" alt="AI Product Development" fill style={{objectFit:'cover'}} sizes="25vw" />
           </div>
-          <div className="svc-img-item">
-            <img src="/assets/service_02.png" alt="AI Automation" />
+          <div className="svc-img-item" style={{position:'relative'}}>
+            <Image src="/assets/service_02.png" alt="AI Automation" fill style={{objectFit:'cover'}} sizes="25vw" />
           </div>
-          <div className="svc-img-item">
-            <img src="/assets/service_03.png" alt="Data & AI Engineering" />
+          <div className="svc-img-item" style={{position:'relative'}}>
+            <Image src="/assets/service_03.png" alt="Data & AI Engineering" fill style={{objectFit:'cover'}} sizes="25vw" />
           </div>
-          <div className="svc-img-item">
-            <img src="/assets/service_04.png" alt="AI Consulting" />
+          <div className="svc-img-item" style={{position:'relative'}}>
+            <Image src="/assets/service_04.png" alt="AI Consulting" fill style={{objectFit:'cover'}} sizes="25vw" />
           </div>
         </div>
       </section>
@@ -223,7 +225,7 @@ export default function ServicesPage() {
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
         <div className="cta-dark-visual" aria-hidden="true">
-          <img src="/assets/service_bototm.png" alt="" />
+          <Image src="/assets/service_bototm.png" alt="" width={400} height={300} style={{width:'100%', height:'auto'}} />
         </div>
         <a href="mailto:hello@ideal-ai.co.kr">Start a Project <span>→</span></a>
       </div>
