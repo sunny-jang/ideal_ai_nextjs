@@ -456,10 +456,11 @@ html, body {
   @apply flex items-center justify-center;
 }
 
-.icon-img img {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
+.icon-img img,
+.icon-img span {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: contain !important;
 }
 
 .service-card h4 {

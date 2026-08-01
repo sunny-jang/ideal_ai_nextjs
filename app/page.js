@@ -84,28 +84,28 @@ export default function HomePage() {
 
         <div className="service-grid">
           <article className="service-card">
-            <div className="icon-img"><Image src="/assets/button1.png" alt="" width={64} height={64} style={{objectFit:'contain', width:'100%', height:'auto'}} /></div>
+            <div className="icon-img"><Image src="/assets/button1.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Product<br />Development</h4>
             <p>챗봇, RAG, Agent 등<br />다양한 AI 제품을 개발합니다.</p>
             <a href="#">→</a>
           </article>
 
           <article className="service-card">
-            <div className="icon-img"><Image src="/assets/button2.png" alt="" width={64} height={64} style={{objectFit:'contain', width:'100%', height:'auto'}} /></div>
+            <div className="icon-img"><Image src="/assets/button2.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Automation</h4>
             <p>업무 자동화와 프로세스 혁신으로<br />비즈니스 효율을 극대화합니다.</p>
             <a href="#">→</a>
           </article>
 
           <article className="service-card">
-            <div className="icon-img"><Image src="/assets/button3.png" alt="" width={64} height={64} style={{objectFit:'contain', width:'100%', height:'auto'}} /></div>
+            <div className="icon-img"><Image src="/assets/button3.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>Data & AI<br />Engineering</h4>
             <p>데이터 수집, 가공, 모델링까지<br />안정적인 AI 인프라를 구축합니다.</p>
             <a href="#">→</a>
           </article>
 
           <article className="service-card">
-            <div className="icon-img"><Image src="/assets/button4.png" alt="" width={64} height={64} style={{objectFit:'contain', width:'100%', height:'auto'}} /></div>
+            <div className="icon-img"><Image src="/assets/button4.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Consulting</h4>
             <p>전략 수립부터 기술 도입까지<br />AI 전환을 함께 설계합니다.</p>
             <a href="#">→</a>
