@@ -1318,8 +1318,10 @@ html, body {
   .cases-grid { grid-template-columns: 1fr; gap: 16px; }
   .impact-row { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .impact-box { padding: 28px 18px; }
-  .case-card { padding: 28px 24px; }
+  .case-card { padding: 28px 24px; grid-template-columns: 1fr; }
   .case-card-top { margin-bottom: 16px; }
+  .case-detail-row { grid-column: 1; grid-row: auto; border-left: none; padding-left: 0; border-top: 1px solid rgba(103,82,180,0.1); padding-top: 20px; margin-top: 12px; }
+  .case-result-badge { grid-row: auto; }
 }
 
 @media (max-width: 560px) {
@@ -1327,7 +1329,6 @@ html, body {
   .impact-box { padding: 22px 14px; }
   .impact-box .i-num { font-size: 40px; }
   .case-card { padding: 22px 18px; }
-  .case-detail-row { grid-template-columns: 1fr; gap: 16px; }
   .case-detail-item:not(:first-child) { border-left: none; padding-left: 0; border-top: 1px solid rgba(103,82,180,0.08); padding-top: 16px; }
 }
 
@@ -1874,6 +1875,43 @@ html, body {
   background: #1a0a3c;
   border-radius: 14px 14px 8px 8px;
   z-index: 2;
+}
+
+/* ─── ABOUT V2 RESPONSIVE ─── */
+@media (max-width: 1180px) {
+  .about-stats-v2 { grid-template-columns: repeat(2, 1fr); }
+  .astat-item:nth-child(2) { border-right: none; }
+  .mission-grid-v2 { grid-template-columns: repeat(2, 1fr); }
+  .expertise-grid-v2 { grid-template-columns: repeat(2, 1fr); }
+  .team-grid-v2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .about-stats-v2 { grid-template-columns: repeat(2, 1fr); }
+  .astat-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .astat-item:last-child { border-bottom: none; }
+  .mission-intro-row { grid-template-columns: 1fr; gap: 32px; }
+  .mission-globe-wrap { display: none; }
+  .mission-grid-v2 { grid-template-columns: 1fr; gap: 14px; }
+  .hanyang-dark { padding: 36px 28px; grid-template-columns: 80px 1fr; gap: 24px; }
+  .h-logo-col img { width: 70px; }
+  .team-hdr-row { grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
+  .team-grid-v2 { grid-template-columns: 1fr; gap: 16px; }
+  .expertise-grid-v2 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .about-cta-dark { padding: 44px 36px; flex-direction: column; align-items: flex-start; gap: 28px; }
+  .about-cta-portal { display: none; }
+}
+
+@media (max-width: 560px) {
+  .about-stats-v2 { grid-template-columns: repeat(2, 1fr); border-radius: 14px; }
+  .astat-item { padding: 20px 16px; gap: 12px; }
+  .astat-num { font-size: 18px; }
+  .hanyang-dark { grid-template-columns: 1fr; gap: 16px; padding: 28px 22px; }
+  .h-logo-col { flex-direction: row; align-items: center; }
+  .expertise-grid-v2 { grid-template-columns: 1fr; gap: 10px; }
+  .about-cta-dark { padding: 32px 24px; border-radius: 20px; }
+  .about-cta-dark h3 { font-size: 26px; }
+  .team-grid-v2 { gap: 12px; }
 }
 
 /* ─── BLOG DETAIL PAGE ─── */
