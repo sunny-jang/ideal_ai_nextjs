@@ -33,6 +33,9 @@ export default function Footer() {
           <a href="mailto:hello@ideal-ai.co.kr" className="footer-email">
             hello@ideal-ai.co.kr
           </a>
+          <a href="tel:+821035419798" className="footer-email" style={{marginTop: 6}}>
+            010-3541-9798
+          </a>
         </div>
 
         <nav className="footer-nav">
@@ -53,7 +56,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Ideal AI. All rights reserved.</span>
-        <span>hello@ideal-ai.co.kr</span>
+        <span>hello@ideal-ai.co.kr · 010-3541-9798</span>
       </div>
     </footer>
   )

@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ScrollObserver from '@/components/ScrollObserver'
+import ChatWidget from '@/components/ChatWidget'
 
 const BASE = 'https://ideal-ai.co.kr'
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <ChatWidget />
         </div>
       </body>
     </html>

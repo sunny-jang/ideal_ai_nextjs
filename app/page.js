@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="hero-actions">
             <a className="btn btn-primary" href="#services">Our Services <span>→</span></a>
             <a className="btn btn-secondary" href="#cases">View Case Studies <span>→</span></a>
-            <a className="btn btn-phone" href="tel:+821000000000">📞 전화 문의</a>
+            <a className="btn btn-phone" href="tel:+821035419798">📞 전화 문의</a>
           </div>
         </div>
 
