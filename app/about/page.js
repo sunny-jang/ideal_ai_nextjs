@@ -64,9 +64,9 @@ const BuildingIcon = () => (
 
 export default function AboutPage() {
   const team = [
-    { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문', degreeImg: '/assets/degree_eunseon.png' },
-    { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', degreeImg: '/assets/degree_youjung.png' },
-    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: null },
+    { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문', degreeImg: '/assets/degree_eunseon.png', profileImg: '/assets/eunseon_profile.jpeg' },
+    { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', degreeImg: '/assets/degree_youjung.png', profileImg: '/assets/youjung_profile.png' },
+    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: null, profileImg: null },
   ]
 
   const expertise = [
@@ -187,7 +187,13 @@ export default function AboutPage() {
         <div className="team-grid-v2">
           {team.map((member) => (
             <div className="tcv2" key={member.name}>
-              <div className="tcv2-avatar"><PersonIcon /></div>
+              {member.profileImg ? (
+                <div className="tcv2-profile" style={{position:'relative'}}>
+                  <Image src={member.profileImg} alt={member.name} fill style={{objectFit:'cover', objectPosition:'top'}} sizes="280px" />
+                </div>
+              ) : (
+                <div className="tcv2-avatar"><PersonIcon /></div>
+              )}
               <div className="tcv2-name">{member.name}</div>
               <div className="tcv2-role">{member.role}</div>
               <div className="tcv2-bio">{member.degree}<br />{member.spec}</div>
