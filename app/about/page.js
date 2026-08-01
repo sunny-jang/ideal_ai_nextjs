@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import CountUp from '@/components/CountUp'
 
 export const metadata = {
   title: 'About — 한양대 AI 석사 출신 전문가 팀',
@@ -125,7 +126,7 @@ export default function AboutPage() {
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">프로젝트 문의하기 <span>→</span></a>
-            <a className="btn btn-secondary" href="/cases">성공 사례 보기 <span>→</span></a>
+            <a className="btn btn-secondary" href="/cases">사례 보기 <span>→</span></a>
           </div>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'-4%', top:'5%', bottom:'-5%', width:'50%', height:'100%'}} aria-hidden="true">
@@ -142,7 +143,7 @@ export default function AboutPage() {
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
             </div>
-            <div><div className="astat-num">2026</div><div className="astat-lbl">창립 연도</div></div>
+            <div><div className="astat-num"><CountUp to={3} suffix="년+" /></div><div className="astat-lbl">AI 연구 경력</div></div>
           </div>
           <div className="astat-item">
             <div className="astat-icon">
@@ -150,7 +151,7 @@ export default function AboutPage() {
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <div><div className="astat-num">3명</div><div className="astat-lbl">한양대 AI 석사팀</div></div>
+            <div><div className="astat-num"><CountUp to={3} suffix="명+" /></div><div className="astat-lbl">한양대 AI 석사팀</div></div>
           </div>
           <div className="astat-item">
             <div className="astat-icon">
@@ -158,7 +159,7 @@ export default function AboutPage() {
                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
               </svg>
             </div>
-            <div><div className="astat-num">8주</div><div className="astat-lbl">기획~배포 납기 목표</div></div>
+            <div><div className="astat-num"><CountUp to={8} suffix="주" /></div><div className="astat-lbl">기획~배포 납기 목표</div></div>
           </div>
           <div className="astat-item">
             <div className="astat-icon">
@@ -166,7 +167,7 @@ export default function AboutPage() {
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <div><div className="astat-num">100%</div><div className="astat-lbl">석사급 직접 참여</div></div>
+            <div><div className="astat-num"><CountUp to={100} suffix="%" /></div><div className="astat-lbl">석사급 직접 참여</div></div>
           </div>
         </div>
       </section>

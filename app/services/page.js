@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import CountUp from '@/components/CountUp'
 
 export const metadata = {
   title: 'Services — AI 개발 · 자동화 · 컨설팅',
@@ -25,7 +26,7 @@ export default function ServicesPage() {
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">프로젝트 시작하기 <span>→</span></a>
-            <a className="btn btn-secondary" href="/cases">성공 사례 보기 <span>→</span></a>
+            <a className="btn btn-secondary" href="/cases">사례 보기 <span>→</span></a>
           </div>
         </div>
         <div className="page-hero-visual" style={{position:'absolute', right:'5%', top:'2%', bottom:'-8%', width:'66%', height:'110%'}} aria-hidden="true">
@@ -41,7 +42,7 @@ export default function ServicesPage() {
           <p>각 서비스는 독립적으로 제공되거나, 통합 AI 전환 패키지로 결합됩니다. 어디서 시작해야 할지 모르겠다면 — 컨설팅부터 시작하세요.</p>
         </div>
 
-        <div className="svc-card-grid">
+        <div className="svc-card-grid" data-stagger="80">
           {/* 01 */}
           <div className="svc-card">
             <div className="svc-card-icon">
@@ -178,7 +179,7 @@ export default function ServicesPage() {
                 <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
               </svg>
             </div>
-            <span className="s-num">3명</span>
+            <span className="s-num"><CountUp to={3} suffix="명+" /></span>
             <span className="s-label">한양대 AI 석사팀</span>
           </div>
           <div className="svc-stat">
@@ -189,7 +190,7 @@ export default function ServicesPage() {
                 <line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
             </div>
-            <span className="s-num">8주</span>
+            <span className="s-num"><CountUp to={8} suffix="주" /></span>
             <span className="s-label">기획~배포 평균 기간</span>
           </div>
           <div className="svc-stat">
@@ -200,7 +201,7 @@ export default function ServicesPage() {
                 <line x1="6" y1="20" x2="6" y2="14"/>
               </svg>
             </div>
-            <span className="s-num">60%</span>
+            <span className="s-num"><CountUp to={60} suffix="%" /></span>
             <span className="s-label">평균 업무 효율 향상</span>
           </div>
           <div className="svc-stat">
@@ -212,7 +213,7 @@ export default function ServicesPage() {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <span className="s-num">100%</span>
+            <span className="s-num"><CountUp to={100} suffix="%" /></span>
             <span className="s-label">석사급 직접 참여</span>
           </div>
         </div>

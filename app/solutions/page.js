@@ -30,7 +30,7 @@ export default function SolutionsPage() {
           <p>산업마다 문제의 구조가 다릅니다. 도메인을 이해한 팀이 설계한 AI는 결과가 다릅니다.</p>
         </div>
 
-        <div className="industry-grid">
+        <div className="industry-grid" data-stagger="80">
           <div className="industry-card">
             <div className="ind-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

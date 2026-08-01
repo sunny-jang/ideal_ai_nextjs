@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ScrollObserver from '@/components/ScrollObserver'
 
 const BASE = 'https://ideal-ai.co.kr'
 
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div className="site-shell">
+          <ScrollObserver />
           <Header />
           {children}
           <Footer />

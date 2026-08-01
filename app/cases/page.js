@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import CountUp from '@/components/CountUp'
 
 export const metadata = {
   title: 'Case Studies — AI로 해결 가능한 비즈니스 문제들',
@@ -35,19 +36,19 @@ export default function CasesPage() {
         {/* Impact numbers inside hero */}
         <div className="impact-row">
           <div className="impact-box">
-            <span className="i-num">78%</span>
+            <span className="i-num"><CountUp to={78} suffix="%" /></span>
             <span className="i-label">금융 — 업무 시간 단축</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">99.2%</span>
+            <span className="i-num"><CountUp to={99.2} suffix="%" /></span>
             <span className="i-label">제조 — 불량 탐지 정확도</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">+34%</span>
+            <span className="i-num"><CountUp to={34} prefix="+" suffix="%" /></span>
             <span className="i-label">이커머스 — 전환율 상승</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">82%</span>
+            <span className="i-num"><CountUp to={82} suffix="%" /></span>
             <span className="i-label">법률 — 검토 시간 단축</span>
           </div>
         </div>
@@ -61,7 +62,7 @@ export default function CasesPage() {
           <p>각 산업에서 AI가 실제로 해결하는 문제 유형과 접근 방식입니다. 비슷한 문제가 있다면 바로 연락주세요.</p>
         </div>
 
-        <div className="cases-grid">
+        <div className="cases-grid" data-stagger="100">
           {/* Case 01 */}
           <div className="case-card">
             <div className="case-card-top">

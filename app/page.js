@@ -72,7 +72,7 @@ export default function HomePage() {
 
       {/* SERVICES */}
       <section className="services" id="services">
-        <div className="section-intro">
+        <div className="section-intro reveal">
           <p className="eyebrow">WHAT WE DO</p>
           <h3>모든 <span>AI 아이디어</span>를<br />현실로 만드는 기술</h3>
           <p>
@@ -114,7 +114,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="cta" id="contact">
+      <section className="cta reveal" id="contact">
         <div>
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
