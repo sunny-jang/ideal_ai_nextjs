@@ -1,5 +1,6 @@
 import './globals.css'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const BASE = 'https://ideal-ai.co.kr'
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
         <div className="site-shell">
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
