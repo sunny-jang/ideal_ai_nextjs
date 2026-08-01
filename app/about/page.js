@@ -189,7 +189,7 @@ export default function AboutPage() {
             <div className="tcv2" key={member.name}>
               {member.profileImg ? (
                 <div className="tcv2-profile" style={{position:'relative'}}>
-                  <Image src={member.profileImg} alt={member.name} fill style={{objectFit:'cover', objectPosition:'top'}} sizes="280px" />
+                  <Image src={member.profileImg} alt={member.name} fill style={{objectFit:'contain'}} sizes="280px" />
                 </div>
               ) : (
                 <div className="tcv2-avatar"><PersonIcon /></div>
