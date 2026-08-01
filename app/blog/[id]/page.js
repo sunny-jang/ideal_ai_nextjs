@@ -38,15 +38,6 @@ export default function BlogPostPage({ params }) {
           </div>
           <h1>{post.title}</h1>
           <p className="blog-post-summary">{post.summary}</p>
-          <div className="blog-post-author">
-            <div className="author-avatar">
-              {post.author[0]}
-            </div>
-            <div>
-              <p className="author-name">{post.author}</p>
-              <p className="author-role">AI Engineer · Ideal AI</p>
-            </div>
-          </div>
         </div>
       </section>
 

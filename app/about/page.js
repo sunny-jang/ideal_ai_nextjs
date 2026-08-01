@@ -174,15 +174,32 @@ export default function AboutPage() {
 
       {/* TEAM */}
       <section className="inner-section pt-0" id="team">
-        <div className="team-hdr-row">
-          <div>
-            <p className="eyebrow">OUR TEAM</p>
-            <h2>AI를 <span>만드는 사람들</span></h2>
+        <div className="hanyang-dark" style={{marginBottom: 40}}>
+          <div className="h-logo-col">
+            <Image src="/assets/HYU_initial_basic.svg" alt="한양대학교" width={44} height={44} />
+            <span>HANYANG<br />UNIVERSITY</span>
           </div>
-          <p style={{color:'var(--muted)', fontSize:14.5, lineHeight:1.75, marginTop:8}}>
-            각 분야의 전문가들이 하나의 팀으로 움직입니다.<br />
-            연구와 실무, 기술과 비즈니스 — 두 세계를 모두 이해합니다.
-          </p>
+          <div className="h-content">
+            <h3>한양대학교 출신 AI 석사 전문가 팀</h3>
+            <p>
+              Ideal AI는 한양대학교 AI 공학대학원 출신들이 모여 만든 팀입니다.
+              대학원에서 쌓은 연구 역량을 바탕으로, 실제 비즈니스 문제를 함께 해결합니다.
+            </p>
+            <div className="h-checks">
+              <div className="h-check"><span className="h-check-dot">✓</span> AI 공학대학원 출신 멤버 중심 구성</div>
+              <div className="h-check"><span className="h-check-dot">✓</span> NLP · 컴퓨터 비전 · MLOps 전공 연구 경험</div>
+              <div className="h-check"><span className="h-check-dot">✓</span> 연구실 수준의 기술력을 실무에 직접 적용</div>
+            </div>
+          </div>
+          <div className="h-building-col">
+            <Image src="/assets/hanyang.png" alt="" width={500} height={400} style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center'}} />
+          </div>
+        </div>
+
+        <div className="section-header">
+          <p className="eyebrow">OUR TEAM</p>
+          <h2>AI를 <span>만드는 사람들</span></h2>
+          <p>각 분야의 전문가들이 하나의 팀으로 움직입니다. 연구와 실무, 기술과 비즈니스 — 두 세계를 모두 이해합니다.</p>
         </div>
 
         <div className="team-grid-v2">
@@ -255,31 +272,6 @@ export default function AboutPage() {
             <p className="mc2-label">VALUES</p>
             <h3 className="mc2-title">진짜 결과만<br />인정합니다</h3>
             <p className="mc2-desc">데이터와 기술을 중심으로 한 성과, 투명한 커뮤니케이션, 지속 가능한 가치를 만듭니다.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* HANYANG DARK */}
-      <section className="inner-section pt-0">
-        <div className="hanyang-dark">
-          <div className="h-logo-col">
-            <Image src="/assets/HYU_initial_basic.svg" alt="한양대학교" width={44} height={44} />
-            <span>HANYANG<br />UNIVERSITY</span>
-          </div>
-          <div className="h-content">
-            <h3>한양대학교 출신 AI 석사 전문가 팀</h3>
-            <p>
-              Ideal AI는 한양대학교 AI 공학대학원 출신들이 모여 만든 팀입니다.
-              대학원에서 쌓은 연구 역량을 바탕으로, 실제 비즈니스 문제를 함께 해결합니다.
-            </p>
-            <div className="h-checks">
-              <div className="h-check"><span className="h-check-dot">✓</span> AI 공학대학원 출신 멤버 중심 구성</div>
-              <div className="h-check"><span className="h-check-dot">✓</span> NLP · 컴퓨터 비전 · MLOps 전공 연구 경험</div>
-              <div className="h-check"><span className="h-check-dot">✓</span> 연구실 수준의 기술력을 실무에 직접 적용</div>
-            </div>
-          </div>
-          <div className="h-building-col">
-            <Image src="/assets/hanyang.png" alt="" width={500} height={400} style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center'}} />
           </div>
         </div>
       </section>
