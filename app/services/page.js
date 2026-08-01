@@ -178,8 +178,8 @@ export default function ServicesPage() {
                 <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
               </svg>
             </div>
-            <span className="s-num">50+</span>
-            <span className="s-label">완료 프로젝트</span>
+            <span className="s-num">3명</span>
+            <span className="s-label">한양대 AI 석사팀</span>
           </div>
           <div className="svc-stat">
             <div className="svc-stat-icon">
@@ -212,8 +212,8 @@ export default function ServicesPage() {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <span className="s-num">15+</span>
-            <span className="s-label">파트너사 및 고객사</span>
+            <span className="s-num">100%</span>
+            <span className="s-label">석사급 직접 참여</span>
           </div>
         </div>
       </section>

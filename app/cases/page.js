@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Case Studies — 실제 AI 프로젝트 성공 사례',
-  description: '실제 도입 시 어떤 문제를 해결할 수 있는지, 접근 방식과 기대 성과를 시나리오로 정리한 예시 케이스입니다.',
+  title: 'Case Studies — AI로 해결 가능한 비즈니스 문제들',
+  description: '금융, 제조, 이커머스, 의료, 법률 — 산업별로 AI가 실제로 해결할 수 있는 문제와 접근 방식을 정리했습니다.',
   alternates: { canonical: 'https://ideal-ai.co.kr/cases' },
   openGraph: {
     title: 'Ideal AI 성공 사례 — 수치로 증명된 AI 프로젝트',
@@ -17,11 +17,11 @@ export default function CasesPage() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-inner">
-          <p className="eyebrow">CASE EXAMPLES</p>
+          <p className="eyebrow">SOLUTION SCENARIOS</p>
           <h1>이런 문제들을<br /><span>해결할 수 있습니다</span></h1>
           <p className="lead">
-            실제 도입 시 어떤 접근으로 문제를 풀고, 어떤 성과를 기대할 수 있는지
-            시나리오 기반으로 정리한 예시입니다.
+            금융, 제조, 이커머스, 의료, 법률 — 산업별로 AI가
+            실제로 어떤 문제를 어떤 방식으로 해결하는지 보여드립니다.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#cases">케이스 보기 <span>→</span></a>
@@ -35,20 +35,20 @@ export default function CasesPage() {
         {/* Impact numbers inside hero */}
         <div className="impact-row">
           <div className="impact-box">
-            <span className="i-num">340%</span>
-            <span className="i-label">평균 프로젝트 ROI</span>
+            <span className="i-num">78%</span>
+            <span className="i-label">금융 — 업무 시간 단축</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">6주</span>
-            <span className="i-label">평균 첫 배포까지</span>
+            <span className="i-num">99.2%</span>
+            <span className="i-label">제조 — 불량 탐지 정확도</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">+28점</span>
-            <span className="i-label">평균 고객 만족도 상승</span>
+            <span className="i-num">+34%</span>
+            <span className="i-label">이커머스 — 전환율 상승</span>
           </div>
           <div className="impact-box">
-            <span className="i-num">12배</span>
-            <span className="i-label">평균 처리 속도 향상</span>
+            <span className="i-num">82%</span>
+            <span className="i-label">법률 — 검토 시간 단축</span>
           </div>
         </div>
       </section>
@@ -56,9 +56,9 @@ export default function CasesPage() {
       {/* CASE STUDIES */}
       <section className="inner-section" id="cases">
         <div className="section-header">
-          <p className="eyebrow">CASE EXAMPLES</p>
-          <h2>예시 <span>프로젝트 시나리오</span></h2>
-          <p>실제 도입 시 어떤 문제를 해결할 수 있는지, 접근 방식과 기대 성과를 시나리오로 정리했습니다.</p>
+          <p className="eyebrow">SOLUTION SCENARIOS</p>
+          <h2>산업별 <span>AI 솔루션 시나리오</span></h2>
+          <p>각 산업에서 AI가 실제로 해결하는 문제 유형과 접근 방식입니다. 비슷한 문제가 있다면 바로 연락주세요.</p>
         </div>
 
         <div className="cases-grid">
