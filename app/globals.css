@@ -2123,7 +2123,7 @@ html, body {
 .footer-email:hover { color: #a78bfa; }
 
 .footer-nav {
-  @apply flex gap-16 flex-1;
+  @apply flex gap-16 flex-1 justify-end;
 }
 
 .footer-nav-group { @apply flex flex-col; }
