@@ -67,7 +67,7 @@ export default function AboutPage() {
   const team = [
     { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문', degreeImg: '/assets/degree_eunseon.png', profileImg: '/assets/eunseon_profile.jpeg' },
     { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', degreeImg: '/assets/degree_youjung.png', profileImg: '/assets/youjung_profile.png' },
-    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: null, profileImg: null },
+    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: null, profileImg: '/assets/jungyu_profile.jpg' },
   ]
 
   const expertise = [
@@ -182,7 +182,7 @@ export default function AboutPage() {
           <div className="h-content">
             <h3>한양대학교 출신 AI 석사 전문가 팀</h3>
             <p>
-              Ideal AI는 한양대학교 AI 공학대학원 출신들이 모여 만든 팀입니다.
+              Ideal AI는 한양대학교 AI 공학대학원 출신들이 모여 만든 팀입니다.<br />
               대학원에서 쌓은 연구 역량을 바탕으로, 실제 비즈니스 문제를 함께 해결합니다.
             </p>
             <div className="h-checks">
@@ -309,7 +309,7 @@ export default function AboutPage() {
           <p className="eyebrow">LET&apos;S BUILD THE FUTURE</p>
           <h3>함께 성장할<br />팀원과 파트너를 찾습니다.</h3>
         </div>
-        <a className="btn-cta-outline" href="mailto:hello@ideal-ai.co.kr">연락하기 <span>→</span></a>
+        <a className="btn-cta-outline" href="mailto:esunbest@gmail.com">연락하기 <span>→</span></a>
       </div>
     </main>
   )
