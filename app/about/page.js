@@ -217,7 +217,7 @@ export default function AboutPage() {
               <div className="tcv2-bio">{member.degree}<br />{member.spec}</div>
               <div className="tcv2-degree-placeholder" style={{position:'relative'}}>
                 {member.degreeImg
-                  ? <Image src={member.degreeImg} alt={`${member.name} 학위증`} fill style={{objectFit:'cover', borderRadius:10}} sizes="200px" />
+                  ? <Image src={member.degreeImg} alt={`${member.name} 학위증`} fill style={{objectFit:'contain', borderRadius:10}} sizes="(max-width: 768px) 90vw, 400px" />
                   : <span>학위증</span>
                 }
               </div>
