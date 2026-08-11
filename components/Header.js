@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -21,7 +20,8 @@ export default function Header() {
   return (
     <header className="header">
       <Link className="logo" href="/" aria-label="Ideal AI 홈">
-        <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} />
+        <span className="logo-mark">iA</span>
+        <span className="logo-text">Ideal <b>AI</b></span>
       </Link>
 
       <button

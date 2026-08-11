@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const links = {
   서비스: [
@@ -22,7 +21,8 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <Link href="/" className="footer-logo">
-            <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} />
+            <span className="logo-mark">iA</span>
+            <span className="logo-text">Ideal <b>AI</b></span>
           </Link>
           <p className="footer-desc">
             RAG, LLM, AI Agent, 업무 자동화 —<br />
