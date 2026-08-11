@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const links = {
   서비스: [
@@ -21,8 +22,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <Link href="/" className="footer-logo">
-            <span className="logo-mark">iA</span>
-            <span className="logo-text">Ideal <b>AI</b></span>
+            <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} style={{height:44, width:'auto', objectFit:'contain'}} />
           </Link>
           <p className="footer-desc">
             RAG, LLM, AI Agent, 업무 자동화 —<br />
@@ -30,8 +30,8 @@ export default function Footer() {
             한양대 AI 석사 연구진이 만드는<br />
             엔터프라이즈 AI 솔루션.
           </p>
-          <a href="mailto:hello@ideal-ai.co.kr" className="footer-email">
-            hello@ideal-ai.co.kr
+          <a href="mailto:esunbest@gmail.com" className="footer-email">
+            esunbest@gmail.com
           </a>
           <a href="tel:+821035419798" className="footer-email" style={{marginTop: 6}}>
             010-3541-9798
@@ -56,7 +56,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Ideal AI. All rights reserved.</span>
-        <span>hello@ideal-ai.co.kr · 010-3541-9798</span>
+        <span>esunbest@gmail.com · 010-3541-9798</span>
       </div>
     </footer>
   )
