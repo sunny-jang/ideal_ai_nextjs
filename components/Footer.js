@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <Link href="/" className="footer-logo">
-            <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} style={{height:44, width:'auto', objectFit:'contain'}} />
+            <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} />
           </Link>
           <p className="footer-desc">
             RAG, LLM, AI Agent, 업무 자동화 —<br />

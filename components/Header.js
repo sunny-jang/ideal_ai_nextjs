@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="header">
       <Link className="logo" href="/" aria-label="Ideal AI 홈">
-        <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} style={{height:40, width:'auto', objectFit:'contain'}} />
+        <Image src="/assets/logo.png" alt="Ideal AI" width={120} height={80} />
       </Link>
 
       <button
