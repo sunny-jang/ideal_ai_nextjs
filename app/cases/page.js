@@ -2,11 +2,11 @@ import Image from 'next/image'
 import CountUp from '@/components/CountUp'
 
 export const metadata = {
-  title: 'Case Studies — AI로 해결 가능한 비즈니스 문제들',
-  description: '금융, 제조, 이커머스, 의료, 법률 — 산업별로 AI가 실제로 해결할 수 있는 문제와 접근 방식을 정리했습니다.',
+  title: 'Case Studies: AI로 해결 가능한 비즈니스 문제들',
+  description: '금융, 제조, 이커머스, 의료, 법률 등 산업별로 AI가 실제로 해결할 수 있는 문제와 접근 방식을 정리했습니다.',
   alternates: { canonical: 'https://ideal-ai.co.kr/cases' },
   openGraph: {
-    title: 'Ideal AI 성공 사례 — 수치로 증명된 AI 프로젝트',
+    title: 'Ideal AI 성공 사례: 수치로 증명된 AI 프로젝트',
     description: '은행 내규 챗봇, 이커머스 자동화, 법률 문서 분석 등 실제 프로젝트 케이스 스터디.',
     url: 'https://ideal-ai.co.kr/cases',
   },
@@ -21,7 +21,7 @@ export default function CasesPage() {
           <p className="eyebrow">SOLUTION SCENARIOS</p>
           <h1>이런 문제들을<br /><span>해결할 수 있습니다</span></h1>
           <p className="lead">
-            금융, 제조, 이커머스, 의료, 법률 — 산업별로 AI가
+            금융, 제조, 이커머스, 의료, 법률 등 산업별로 AI가
             실제로 어떤 문제를 어떤 방식으로 해결하는지 보여드립니다.
           </p>
           <div className="hero-actions">
@@ -37,19 +37,19 @@ export default function CasesPage() {
         <div className="impact-row">
           <div className="impact-box">
             <span className="i-num"><CountUp to={78} suffix="%" /></span>
-            <span className="i-label">금융 — 업무 시간 단축</span>
+            <span className="i-label">금융 업무 시간 단축</span>
           </div>
           <div className="impact-box">
             <span className="i-num"><CountUp to={99.2} suffix="%" /></span>
-            <span className="i-label">제조 — 불량 탐지 정확도</span>
+            <span className="i-label">제조 불량 탐지 정확도</span>
           </div>
           <div className="impact-box">
             <span className="i-num"><CountUp to={34} prefix="+" suffix="%" /></span>
-            <span className="i-label">이커머스 — 전환율 상승</span>
+            <span className="i-label">이커머스 전환율 상승</span>
           </div>
           <div className="impact-box">
             <span className="i-num"><CountUp to={82} suffix="%" /></span>
-            <span className="i-label">법률 — 검토 시간 단축</span>
+            <span className="i-label">법률 검토 시간 단축</span>
           </div>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">금융</span>
             </div>
-            <h3>대형 은행 내부 규정 RAG 챗봇 — 직원 6,000명의 업무 방식을 바꾸다</h3>
+            <h3>대형 은행 내부 규정 RAG 챗봇: 직원 6,000명의 업무 방식을 바꾸다</h3>
             <p className="case-summary">매일 수백 건의 규정 문의가 준법감시팀으로 쏟아졌습니다. 담당자 1명이 수천 페이지 문서를 뒤지며 답변하는 구조를 AI가 대체했습니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -109,7 +109,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">제조</span>
             </div>
-            <h3>반도체 공정 불량 탐지 — 사람의 눈을 넘어선 정확도 99.2%</h3>
+            <h3>반도체 공정 불량 탐지: 사람의 눈을 넘어선 정확도 99.2%</h3>
             <p className="case-summary">숙련 검사원도 놓치는 0.1mm 크기의 불량. 야간·주말 공정은 검사 품질이 떨어졌습니다. AI 비전이 24시간 동일한 정확도로 라인을 지킵니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -143,7 +143,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">이커머스</span>
             </div>
-            <h3>이커머스 AI 개인화 추천 — 전환율 34% 상승, 매출 직결</h3>
+            <h3>이커머스 AI 개인화 추천: 전환율 34% 상승, 매출 직결</h3>
             <p className="case-summary">MAU 150만 플랫폼의 추천 알고리즘이 단순 카테고리 기반이었습니다. &ldquo;많이 산 상품&rdquo; 대신 &ldquo;지금 이 사람에게 맞는 상품&rdquo;을 보여주자 전환율이 달라졌습니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -175,7 +175,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">HR · 운영</span>
             </div>
-            <h3>HR 문서 자동화 — 채용 담당자가 서류 대신 사람을 보게 됐습니다</h3>
+            <h3>HR 문서 자동화: 채용 담당자가 서류 대신 사람을 보게 됐습니다</h3>
             <p className="case-summary">월 1,200건의 이력서, 면접 요약, 계약서 검토를 HR 팀 3명이 처리했습니다. 대부분의 시간이 문서에 쓰였고, 정작 후보자 평가는 뒷전이었습니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -207,7 +207,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">의료</span>
             </div>
-            <h3>병원 진료 기록 AI 요약 — 의사가 환자 이야기를 더 들을 수 있게</h3>
+            <h3>병원 진료 기록 AI 요약: 의사가 환자 이야기를 더 들을 수 있게</h3>
             <p className="case-summary">외래 진료 전 환자당 평균 12분을 EMR 기록 검토에 썼습니다. 하루 40명이면 8시간 중 2시간이 서류에 사라지는 구조였습니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -242,7 +242,7 @@ export default function CasesPage() {
               </div>
               <span className="case-industry-badge">법률</span>
             </div>
-            <h3>법률 계약서 리스크 분석 AI — 500페이지를 3분 안에</h3>
+            <h3>법률 계약서 리스크 분석 AI: 500페이지를 3분 안에</h3>
             <p className="case-summary">외부 자문 없이 처리하기엔 계약서가 너무 많았고, 외부에 맡기기엔 비용이 컸습니다. 인하우스 법무팀 2명이 월 200건을 검토하는 한계가 있었습니다.</p>
             <div className="case-result-badge">
               <svg width="14" height="14" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
@@ -272,7 +272,7 @@ export default function CasesPage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:hello@ideal-ai.co.kr">Start a Project <span>→</span></a>
+        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
       </section>
     </main>
   )

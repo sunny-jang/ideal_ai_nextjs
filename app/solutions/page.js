@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Solutions — Ideal AI',
-  description: 'Ideal AI 솔루션 — 산업별 AI 솔루션과 기술 스택',
+  title: 'Solutions | Ideal AI',
+  description: 'Ideal AI 솔루션: 산업별 AI 솔루션과 기술 스택',
 }
 
 export default function SolutionsPage() {
@@ -12,7 +12,7 @@ export default function SolutionsPage() {
           <p className="eyebrow">INDUSTRY AI SOLUTIONS</p>
           <h1>당신의 산업에 맞는<br /><span>AI, 이미 검증됐습니다</span></h1>
           <p className="lead">
-            금융, 제조, 유통, 의료, 법률, 교육 — 각 산업의 실제 페인포인트를 해결한 경험이 있습니다.
+            금융, 제조, 유통, 의료, 법률, 교육까지 각 산업의 실제 페인포인트를 해결한 경험이 있습니다.
             도메인 지식 없이 기술만 아는 팀과는 처음부터 다릅니다.
           </p>
           <div className="hero-actions">
@@ -40,11 +40,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Finance</div>
             <h3>금융</h3>
-            <p>여신 심사 3일에서 3분으로, 이상거래 감지 정확도 99.2% — 규제 환경을 지키면서도 속도와 정확도를 동시에 잡습니다.</p>
+            <p>여신 심사 3일에서 3분으로, 이상거래 감지 정확도 99.2%. 규제 환경을 지키면서도 속도와 정확도를 동시에 잡습니다.</p>
             <ul className="use-cases">
-              <li>AI 여신 심사 자동화 — 심사 시간 90% 단축, 오심율 최소화</li>
-              <li>실시간 이상거래 탐지 — 패턴 기반 금융 사기 방지 시스템</li>
-              <li>계약서 · 보고서 자동 분석 — 컴플라이언스 리스크 즉시 감지</li>
+              <li>AI 여신 심사 자동화: 심사 시간 90% 단축, 오심율 최소화</li>
+              <li>실시간 이상거래 탐지: 패턴 기반 금융 사기 방지 시스템</li>
+              <li>계약서 · 보고서 자동 분석: 컴플라이언스 리스크 즉시 감지</li>
             </ul>
           </div>
 
@@ -59,11 +59,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Manufacturing</div>
             <h3>제조</h3>
-            <p>설비 고장을 예측해 다운타임 제로, 비전 AI로 불량률 40% 감소 — 사람의 눈을 AI가 대신합니다.</p>
+            <p>설비 고장을 예측해 다운타임 제로, 비전 AI로 불량률 40% 감소. 사람의 눈을 AI가 대신합니다.</p>
             <ul className="use-cases">
-              <li>컴퓨터 비전 불량 탐지 — 수작업 검사보다 15배 빠르고 99% 정확</li>
-              <li>예지 보전 AI — 고장 나기 전에 미리 알리는 설비 모니터링</li>
-              <li>생산 라인 최적화 — AI 시뮬레이션으로 병목 구간 사전 제거</li>
+              <li>컴퓨터 비전 불량 탐지: 수작업 검사보다 15배 빠르고 99% 정확</li>
+              <li>예지 보전 AI: 고장 나기 전에 미리 알리는 설비 모니터링</li>
+              <li>생산 라인 최적화: AI 시뮬레이션으로 병목 구간 사전 제거</li>
             </ul>
           </div>
 
@@ -77,11 +77,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Retail &amp; E-Commerce</div>
             <h3>유통 · 이커머스</h3>
-            <p>개인화 추천으로 전환율 3배, AI 수요 예측으로 재고 과잉 30% 감소 — 데이터가 매출이 됩니다.</p>
+            <p>개인화 추천으로 전환율 3배, AI 수요 예측으로 재고 과잉 30% 감소. 데이터가 매출이 됩니다.</p>
             <ul className="use-cases">
-              <li>개인화 추천 엔진 — 클릭 한 번의 이면을 읽는 AI</li>
-              <li>AI 수요 예측 · 재고 최적화 — 팔릴 것만 채우는 스마트 재고 관리</li>
-              <li>24시간 CS 챗봇 · VOC 자동 분석 — 고객의 말을 놓치지 않는 AI</li>
+              <li>개인화 추천 엔진: 클릭 한 번의 이면을 읽는 AI</li>
+              <li>AI 수요 예측 · 재고 최적화: 팔릴 것만 채우는 스마트 재고 관리</li>
+              <li>24시간 CS 챗봇 · VOC 자동 분석: 고객의 말을 놓치지 않는 AI</li>
             </ul>
           </div>
 
@@ -93,11 +93,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Healthcare</div>
             <h3>의료 · 헬스케어</h3>
-            <p>의사의 행정 업무 70% 감소, 진료에만 집중 — AI가 서류를 처리하는 동안 의사는 환자를 봅니다.</p>
+            <p>의사의 행정 업무 70% 감소, 진료에만 집중. AI가 서류를 처리하는 동안 의사는 환자를 봅니다.</p>
             <ul className="use-cases">
-              <li>의료 영상(X-ray, MRI) AI 보조 분석 — 놓치기 쉬운 소견을 먼저 포착</li>
-              <li>EMR 기반 진료 기록 자동 요약 — 진료 준비 시간 70% 단축</li>
-              <li>처방전 · 의료 문서 자동 분류 — 행정 업무 부담 없는 진료 환경</li>
+              <li>의료 영상(X-ray, MRI) AI 보조 분석: 놓치기 쉬운 소견을 먼저 포착</li>
+              <li>EMR 기반 진료 기록 자동 요약: 진료 준비 시간 70% 단축</li>
+              <li>처방전 · 의료 문서 자동 분류: 행정 업무 부담 없는 진료 환경</li>
             </ul>
           </div>
 
@@ -112,11 +112,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Legal</div>
             <h3>법률</h3>
-            <p>계약서 검토 시간 80% 단축, 리스크 조항 자동 감지 — 변호사는 전략에, AI는 검토에.</p>
+            <p>계약서 검토 시간 80% 단축, 리스크 조항 자동 감지. 변호사는 전략에, AI는 검토에.</p>
             <ul className="use-cases">
-              <li>계약서 리스크 조항 자동 탐지 — 수백 페이지를 3분 안에 검토</li>
-              <li>RAG 기반 판례 · 법령 검색 — 10년치 판례도 즉시 검색</li>
-              <li>법률 문서 초안 자동 생성 — 표준 계약서 작성 시간 90% 단축</li>
+              <li>계약서 리스크 조항 자동 탐지: 수백 페이지를 3분 안에 검토</li>
+              <li>RAG 기반 판례 · 법령 검색: 10년치 판례도 즉시 검색</li>
+              <li>법률 문서 초안 자동 생성: 표준 계약서 작성 시간 90% 단축</li>
             </ul>
           </div>
 
@@ -128,11 +128,11 @@ export default function SolutionsPage() {
             </div>
             <div className="ind-sub">Education</div>
             <h3>교육</h3>
-            <p>학습자 1:1 맞춤 커리큘럼, 완주율 2배 향상 — 30명 강의실에서 30개의 맞춤 학습이 가능합니다.</p>
+            <p>학습자 1:1 맞춤 커리큘럼, 완주율 2배 향상. 30명 강의실에서 30개의 맞춤 학습이 가능합니다.</p>
             <ul className="use-cases">
-              <li>학습자 수준별 맞춤 콘텐츠 추천 — 이탈 전에 먼저 개입하는 AI</li>
-              <li>24시간 AI 튜터 · 질의응답 챗봇 — 강사 없이도 막히지 않는 학습</li>
-              <li>서술형 답안 자동 채점 · 피드백 — 즉각적인 학습 루프 구현</li>
+              <li>학습자 수준별 맞춤 콘텐츠 추천: 이탈 전에 먼저 개입하는 AI</li>
+              <li>24시간 AI 튜터 · 질의응답 챗봇: 강사 없이도 막히지 않는 학습</li>
+              <li>서술형 답안 자동 채점 · 피드백: 즉각적인 학습 루프 구현</li>
             </ul>
           </div>
         </div>
@@ -217,7 +217,7 @@ export default function SolutionsPage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:hello@ideal-ai.co.kr">Start a Project <span>→</span></a>
+        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
       </section>
     </main>
   )

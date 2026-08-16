@@ -2,11 +2,11 @@ import Image from 'next/image'
 import CountUp from '@/components/CountUp'
 
 export const metadata = {
-  title: 'Services — AI 개발 · 자동화 · 컨설팅',
-  description: 'AI Product Development, Process Automation, Data Engineering, AI Consulting — 기획부터 배포까지 평균 8주, 도입 후 업무 효율 평균 60% 향상.',
+  title: 'Services: AI 개발 · 자동화 · 컨설팅',
+  description: 'AI Product Development, Process Automation, Data Engineering, AI Consulting. 기획부터 배포까지 평균 8주, 도입 후 업무 효율 평균 60% 향상.',
   alternates: { canonical: 'https://ideal-ai.co.kr/services' },
   openGraph: {
-    title: 'Ideal AI 서비스 — 비즈니스를 바꾸는 4가지 AI 솔루션',
+    title: 'Ideal AI 서비스: 비즈니스를 바꾸는 4가지 AI 솔루션',
     description: 'AI 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅. 기획부터 배포까지 평균 8주.',
     url: 'https://ideal-ai.co.kr/services',
   },
@@ -21,7 +21,7 @@ export default function ServicesPage() {
           <p className="eyebrow">WHAT WE DO</p>
           <h1>비즈니스를 바꾸는<br /><span>AI, 직접 만듭니다</span></h1>
           <p className="lead">
-            기획부터 배포까지 평균 8주. 도입 후 업무 효율 평균 60% 향상 —
+            기획부터 배포까지 평균 8주. 도입 후 업무 효율 평균 60% 향상.
             수치로 증명된 AI 개발 파트너가 당신의 비즈니스 문제를 함께 해결합니다.
           </p>
           <div className="hero-actions">
@@ -39,7 +39,7 @@ export default function ServicesPage() {
         <div className="section-header">
           <p className="eyebrow">CORE SERVICES</p>
           <h2>4가지 핵심 <span>서비스 영역</span></h2>
-          <p>각 서비스는 독립적으로 제공되거나, 통합 AI 전환 패키지로 결합됩니다. 어디서 시작해야 할지 모르겠다면 — 컨설팅부터 시작하세요.</p>
+          <p>각 서비스는 독립적으로 제공되거나, 통합 AI 전환 패키지로 결합됩니다. 어디서 시작해야 할지 모르겠다면 컨설팅부터 시작하세요.</p>
         </div>
 
         <div className="svc-card-grid" data-stagger="80">
@@ -52,11 +52,11 @@ export default function ServicesPage() {
             </div>
             <p className="svc-num-tag"><span className="svc-num">01</span> AI PRODUCT DEVELOPMENT</p>
             <h3>고객 응대 자동화,<br />CS 비용을 절반으로</h3>
-            <p className="svc-desc">챗봇, RAG, LLM Agent — 기술이 아닌 결과로 말합니다. 24시간 무중단 AI가 고객 응대를 대신하고, 팀은 진짜 중요한 일에 집중합니다.</p>
+            <p className="svc-desc">챗봇, RAG, LLM Agent. 기술이 아닌 결과로 말합니다. 24시간 무중단 AI가 고객 응대를 대신하고, 팀은 진짜 중요한 일에 집중합니다.</p>
             <ul className="svc-list">
               <li>RAG 기반 사내 지식 챗봇 구축</li>
-              <li>LLM Agent — 멀티스텝 업무 수행</li>
-              <li>개인화 추천 엔진 — 고객 경험 향상</li>
+              <li>LLM Agent: 멀티스텝 업무 수행</li>
+              <li>개인화 추천 엔진: 고객 경험 향상</li>
             </ul>
             <span className="svc-arrow">자세히 알아보기 →</span>
           </div>
@@ -70,7 +70,7 @@ export default function ServicesPage() {
             </div>
             <p className="svc-num-tag"><span className="svc-num">02</span> PROCESS AUTOMATION</p>
             <h3>반복 업무 90% 자동화,<br />사람은 고부가가치에만</h3>
-            <p className="svc-desc">매일 똑같이 반복되는 작업은 AI에게. 분류, 추출, 생성, 발송 — 사람이 했던 루틴을 자동화 파이프라인이 대신합니다.</p>
+            <p className="svc-desc">매일 똑같이 반복되는 작업은 AI에게. 분류, 추출, 생성, 발송 등 사람이 했던 루틴을 자동화 파이프라인이 대신합니다.</p>
             <ul className="svc-list">
               <li>문서 분류 · 데이터 추출 · 리포트 자동 생성</li>
               <li>RPA + AI 하이브리드 자동화</li>
@@ -107,7 +107,7 @@ export default function ServicesPage() {
               </svg>
             </div>
             <p className="svc-num-tag"><span className="svc-num">04</span> AI CONSULTING</p>
-            <h3>AI 도입 실패율 70% —<br />전략 없이 시작하면 돈만 낭비</h3>
+            <h3>AI 도입 실패율 70%.<br />전략 없이 시작하면 돈만 낭비</h3>
             <p className="svc-desc">AI 도입의 가장 큰 리스크는 기술이 아닌 방향입니다. 조직 현황을 진단하고, ROI를 정확히 계산하고, 실패 없는 로드맵을 설계합니다.</p>
             <ul className="svc-list">
               <li>AI 도입 타당성 분석 &amp; ROI 설계</li>
@@ -228,7 +228,7 @@ export default function ServicesPage() {
         <div className="cta-dark-visual" aria-hidden="true">
           <Image src="/assets/service_bototm.png" alt="" width={400} height={300} style={{width:'100%', height:'auto'}} />
         </div>
-        <a href="mailto:hello@ideal-ai.co.kr">Start a Project <span>→</span></a>
+        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
       </div>
     </main>
   )

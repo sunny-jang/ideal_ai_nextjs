@@ -1,8 +1,25 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
 
+function renderMarkdown(text) {
+  return text.split('\n').map((line, i) => {
+    const parts = line.split(/\*\*(.+?)\*\*/g)
+    return (
+      <span key={i}>
+        {parts.map((p, j) => j % 2 === 1 ? <strong key={j}>{p}</strong> : p)}
+        {i < text.split('\n').length - 1 && <br />}
+      </span>
+    )
+  })
+}
+
+function makeSessionId() {
+  return Math.random().toString(36).slice(2, 10) + '-' + Date.now()
+}
+
 export default function ChatWidget() {
   const [open, setOpen] = useState(false)
+  const sessionId = useRef(makeSessionId())
   const [messages, setMessages] = useState([
     { role: 'assistant', content: '안녕하세요! Ideal AI 상담 어시스턴트입니다. 무엇이든 물어보세요 😊' }
   ])
@@ -28,7 +45,7 @@ export default function ChatWidget() {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: next.slice(1) }),
+        body: JSON.stringify({ messages: next.slice(1), sessionId: sessionId.current }),
       })
 
       const reader = res.body.getReader()
@@ -73,7 +90,7 @@ export default function ChatWidget() {
             {messages.map((m, i) => (
               <div key={i} className={`chat-msg ${m.role}`}>
                 {m.role === 'assistant' && <div className="chat-msg-avatar">AI</div>}
-                <div className="chat-bubble">{m.content}</div>
+                <div className="chat-bubble">{m.role === 'assistant' ? renderMarkdown(m.content) : m.content}</div>
               </div>
             ))}
             {loading && messages[messages.length - 1]?.content === '' && (
@@ -104,7 +121,7 @@ export default function ChatWidget() {
       )}
 
       {/* Floating button */}
-      <button className="chat-fab" onClick={() => setOpen(o => !o)} aria-label="상담 챗봇 열기">
+      <button className={`chat-fab${open ? ' chat-fab-hidden' : ''}`} onClick={() => setOpen(o => !o)} aria-label="상담 챗봇 열기">
         {open ? (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>

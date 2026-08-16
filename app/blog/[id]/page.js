@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const post = getPost(params.id)
   if (!post) return {}
   return {
-    title: `${post.title} — Ideal AI Blog`,
+    title: `${post.title} | Ideal AI Blog`,
     description: post.summary,
   }
 }
@@ -110,7 +110,7 @@ export default function BlogPostPage({ params }) {
           <p className="eyebrow">STAY UPDATED</p>
           <h3>AI 실무 인사이트를<br />가장 먼저 받아보세요.</h3>
         </div>
-        <a href="mailto:hello@ideal-ai.co.kr">뉴스레터 구독 <span>→</span></a>
+        <a href="mailto:esunbest@gmail.com">뉴스레터 구독 <span>→</span></a>
       </section>
     </main>
   )

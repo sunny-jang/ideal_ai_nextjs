@@ -2,11 +2,11 @@ import Image from 'next/image'
 import CountUp from '@/components/CountUp'
 
 export const metadata = {
-  title: 'About — 한양대 AI 석사 출신 전문가 팀',
+  title: 'About: 한양대 AI 석사 출신 전문가 팀',
   description: '한양대학교 AI 공학대학원 출신 석사 전문가들이 모여 만든 Ideal AI. NLP, RAG, LLM 파인튜닝, MLOps 전공 연구 경험을 실무에 직접 적용합니다.',
   alternates: { canonical: 'https://ideal-ai.co.kr/about' },
   openGraph: {
-    title: 'Ideal AI 팀 소개 — 연구실에서 프로덕션까지 끝까지 책임지는 팀',
+    title: 'Ideal AI 팀 소개: 연구실에서 프로덕션까지 끝까지 책임지는 팀',
     description: '한양대 AI 공학대학원 출신 석사 전문가 팀. NLP · RAG · LLM 파인튜닝 · MLOps 전공.',
     url: 'https://ideal-ai.co.kr/about',
   },
@@ -73,27 +73,27 @@ export default function AboutPage() {
   const expertise = [
     {
       label: 'LLM & Foundation Models',
-      desc: 'GPT-4o, Claude 3.5, Gemini, Llama 3 — 목적에 맞는 모델 선택부터 파인튜닝·LoRA·QLoRA까지',
+      desc: 'GPT-4o, Claude 3.5, Gemini, Llama 3. 목적에 맞는 모델 선택부터 파인튜닝·LoRA·QLoRA까지',
       svg: <><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M7.5 17.5l-2 1.5M16.5 17.5l2 1.5"/><path d="M12 11L7.5 17.5M12 11l4.5 6.5"/></>,
     },
     {
       label: 'RAG & Vector Retrieval',
-      desc: '단순 벡터 검색을 넘어 Hybrid Search, Re-ranking, Multi-hop 추론까지 — 정확도와 속도를 동시에',
+      desc: '단순 벡터 검색을 넘어 Hybrid Search, Re-ranking, Multi-hop 추론까지. 정확도와 속도를 동시에',
       svg: <><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></>,
     },
     {
       label: 'AI Agent & Automation',
-      desc: 'LangGraph, AutoGen, n8n 기반 멀티에이전트 시스템 — 복잡한 업무를 자율적으로 처리하는 AI',
+      desc: 'LangGraph, AutoGen, n8n 기반 멀티에이전트 시스템. 복잡한 업무를 자율적으로 처리하는 AI',
       svg: <><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></>,
     },
     {
       label: 'Computer Vision',
-      desc: 'CNN, Transformer 기반 실시간 비전 AI — 불량 탐지, 의료 영상 분석, 객체 인식',
+      desc: 'CNN, Transformer 기반 실시간 비전 AI. 불량 탐지, 의료 영상 분석, 객체 인식',
       svg: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
     },
     {
       label: 'MLOps & Infrastructure',
-      desc: 'AWS · GCP, Docker, Kubernetes, Airflow — 실험실 AI가 아닌 프로덕션에서 살아남는 인프라',
+      desc: 'AWS · GCP, Docker, Kubernetes, Airflow. 실험실 AI가 아닌 프로덕션에서 살아남는 인프라',
       svg: <><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></>,
     },
     {
@@ -122,7 +122,7 @@ export default function AboutPage() {
           <h1>연구실에서 프로덕션까지,<br /><span>끝까지 책임지는 팀</span></h1>
           <p className="lead">
             한양대학교 AI 석사 연구원들이 창업했습니다. 논문을 쓰는 연구자이자,
-            실제 비즈니스 문제를 푸는 엔지니어로서 — 이론과 실무 사이의 간극을 없앱니다.
+            실제 비즈니스 문제를 푸는 엔지니어로서 이론과 실무 사이의 간극을 없앱니다.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">프로젝트 문의하기 <span>→</span></a>
@@ -199,7 +199,7 @@ export default function AboutPage() {
         <div className="section-header">
           <p className="eyebrow">OUR TEAM</p>
           <h2>AI를 <span>만드는 사람들</span></h2>
-          <p>각 분야의 전문가들이 하나의 팀으로 움직입니다. 연구와 실무, 기술과 비즈니스 — 두 세계를 모두 이해합니다.</p>
+          <p>각 분야의 전문가들이 하나의 팀으로 움직입니다. 연구와 실무, 기술과 비즈니스, 두 세계를 모두 이해합니다.</p>
         </div>
 
         <div className="team-grid-v2">

@@ -25,7 +25,7 @@ export default function Footer() {
             <span className="logo-text">Ideal <b>AI</b></span>
           </Link>
           <p className="footer-desc">
-            RAG, LLM, AI Agent, 업무 자동화 —<br />
+            RAG, LLM, AI Agent, 업무 자동화.<br />
             기획부터 배포까지 평균 8주.<br />
             한양대 AI 석사 연구진이 만드는<br />
             엔터프라이즈 AI 솔루션.

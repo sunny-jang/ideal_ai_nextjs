@@ -2,12 +2,12 @@ import Image from 'next/image'
 import HeroVisual from '@/components/HeroVisual'
 
 export const metadata = {
-  title: 'Ideal AI — AI Solutions for the Ideal Future',
+  title: 'Ideal AI: AI Solutions for the Ideal Future',
   description: 'Ideal AI는 RAG, LLM, Agent, Automation 등 혁신 AI 기술로 당신의 아이디어를 AI 제품으로 실현합니다. 기획부터 배포까지 평균 8주.',
   alternates: { canonical: 'https://ideal-ai.co.kr' },
   openGraph: {
-    title: 'Ideal AI — 비즈니스를 바꾸는 AI, 직접 만듭니다',
-    description: 'RAG, LLM, AI Agent, 업무 자동화 — 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
+    title: 'Ideal AI: 비즈니스를 바꾸는 AI, 직접 만듭니다',
+    description: 'RAG, LLM, AI Agent, 업무 자동화. 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
     url: 'https://ideal-ai.co.kr',
   },
 }
@@ -119,7 +119,7 @@ export default function HomePage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:hello@ideal-ai.co.kr">Start a Project <span>→</span></a>
+        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
       </section>
     </main>
   )
