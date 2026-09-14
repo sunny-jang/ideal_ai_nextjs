@@ -54,8 +54,8 @@ export async function POST(req) {
   const { messages, sessionId } = await req.json()
   const lastUser = [...messages].reverse().find(m => m.role === 'user')?.content || ''
 
-  // 첫 번째 메시지일 때만 SMS 발송
-  if (messages.length === 1) {
+  // 초반 메시지일 때만 SMS 발송
+  if (messages.length <= 2) {
     sendSms(`[Ideal AI 상담] 새 문의\n"${lastUser.slice(0, 60)}"`).catch(() => {})
   }
 
