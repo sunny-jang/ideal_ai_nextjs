@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { posts, getPost } from '@/lib/posts'
@@ -53,6 +54,25 @@ export default function BlogPostPage({ params }) {
             }
             if (block.type === 'p') {
               return <p key={i} className="blog-p">{block.text}</p>
+            }
+            if (block.type === 'figure') {
+              return (
+                <figure key={i} className="blog-figure">
+                  <Image
+                    src={block.src}
+                    alt={block.alt || block.caption || ''}
+                    width={block.width || 1200}
+                    height={block.height || 800}
+                    sizes="(max-width: 768px) 100vw, 720px"
+                  />
+                  {block.caption && (
+                    <figcaption>
+                      {block.caption}
+                      {block.note && <span className="blog-figure-note">{block.note}</span>}
+                    </figcaption>
+                  )}
+                </figure>
+              )
             }
             if (block.type === 'result') {
               return (

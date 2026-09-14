@@ -2099,6 +2099,31 @@ html, body {
   color: #3a4260;
   margin: 0 0 24px;
 }
+.blog-figure {
+  margin: 40px 0;
+}
+.blog-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid rgba(112,73,246,0.14);
+  background: #0f1115;
+}
+.blog-figure figcaption {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b7391;
+  margin-top: 12px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(112,73,246,0.3);
+}
+.blog-figure-note {
+  display: block;
+  font-size: 13px;
+  color: #8b92ab;
+  margin-top: 4px;
+}
 .blog-result-box {
   background: linear-gradient(135deg, rgba(112,73,246,0.06) 0%, rgba(239,71,188,0.04) 100%);
   border: 1px solid rgba(112,73,246,0.15);
@@ -2205,6 +2230,8 @@ html, body {
   .blog-post-hero h1 { font-size: 24px; }
   .blog-lead { font-size: 16px; }
   .blog-h2 { font-size: 19px; }
+  .blog-figure { margin: 28px 0; }
+  .blog-figure figcaption { font-size: 13px; }
   .blog-p { font-size: 16px; }
 }
 
