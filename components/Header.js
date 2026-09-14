@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -20,8 +21,7 @@ export default function Header() {
   return (
     <header className="header">
       <Link className="logo" href="/" aria-label="Ideal AI 홈">
-        <span className="logo-mark">iA</span>
-        <span className="logo-text">Ideal <b>AI</b></span>
+        <Image src="/assets/logo_color.png" alt="Ideal AI" height={248} width={1208} style={{ height: '32px', width: 'auto' }} priority />
       </Link>
 
       <button
