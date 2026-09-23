@@ -4,11 +4,11 @@ import CountUp from '@/components/CountUp'
 export const metadata = {
   title: 'Case Studies: AI로 해결 가능한 비즈니스 문제들',
   description: '금융, 제조, 이커머스, 의료, 법률 등 산업별로 AI가 실제로 해결할 수 있는 문제와 접근 방식을 정리했습니다.',
-  alternates: { canonical: 'https://ideal-ai.co.kr/cases' },
+  alternates: { canonical: 'https://ideal-tech.co.kr/cases' },
   openGraph: {
     title: 'Ideal AI 성공 사례: 수치로 증명된 AI 프로젝트',
     description: '은행 내규 챗봇, 이커머스 자동화, 법률 문서 분석 등 실제 프로젝트 케이스 스터디.',
-    url: 'https://ideal-ai.co.kr/cases',
+    url: 'https://ideal-tech.co.kr/cases',
   },
 }
 

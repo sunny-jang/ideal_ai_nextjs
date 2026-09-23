@@ -1,6 +1,6 @@
 import { posts } from '@/lib/posts'
 
-const BASE = 'https://ideal-ai.co.kr'
+const BASE = 'https://ideal-tech.co.kr'
 
 export default function sitemap() {
   const staticRoutes = [

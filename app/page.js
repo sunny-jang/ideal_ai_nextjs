@@ -4,11 +4,11 @@ import HeroVisual from '@/components/HeroVisual'
 export const metadata = {
   title: 'Ideal AI: AI Solutions for the Ideal Future',
   description: 'Ideal AI는 RAG, LLM, Agent, Automation 등 혁신 AI 기술로 당신의 아이디어를 AI 제품으로 실현합니다. 기획부터 배포까지 평균 8주.',
-  alternates: { canonical: 'https://ideal-ai.co.kr' },
+  alternates: { canonical: 'https://ideal-tech.co.kr' },
   openGraph: {
     title: 'Ideal AI: 비즈니스를 바꾸는 AI, 직접 만듭니다',
     description: 'RAG, LLM, AI Agent, 업무 자동화. 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
-    url: 'https://ideal-ai.co.kr',
+    url: 'https://ideal-tech.co.kr',
   },
 }
 

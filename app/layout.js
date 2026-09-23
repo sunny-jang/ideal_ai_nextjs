@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import ScrollObserver from '@/components/ScrollObserver'
 import ChatWidget from '@/components/ChatWidget'
 
-const BASE = 'https://ideal-ai.co.kr'
+const BASE = 'https://ideal-tech.co.kr'
 const GA_MEASUREMENT_ID = 'G-VZGF5EVHZH'
 
 export const metadata = {

@@ -4,11 +4,11 @@ import CountUp from '@/components/CountUp'
 export const metadata = {
   title: 'About: 한양대 AI 석사 출신 전문가 팀',
   description: '한양대학교 AI 공학대학원 출신 석사 전문가들이 모여 만든 Ideal AI. NLP, RAG, LLM 파인튜닝, MLOps 전공 연구 경험을 실무에 직접 적용합니다.',
-  alternates: { canonical: 'https://ideal-ai.co.kr/about' },
+  alternates: { canonical: 'https://ideal-tech.co.kr/about' },
   openGraph: {
     title: 'Ideal AI 팀 소개: 연구실에서 프로덕션까지 끝까지 책임지는 팀',
     description: '한양대 AI 공학대학원 출신 석사 전문가 팀. NLP · RAG · LLM 파인튜닝 · MLOps 전공.',
-    url: 'https://ideal-ai.co.kr/about',
+    url: 'https://ideal-tech.co.kr/about',
   },
 }
 

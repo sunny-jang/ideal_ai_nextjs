@@ -4,11 +4,11 @@ import CountUp from '@/components/CountUp'
 export const metadata = {
   title: 'Services: AI 개발 · 자동화 · 컨설팅',
   description: 'AI Product Development, Process Automation, Data Engineering, AI Consulting. 기획부터 배포까지 평균 8주, 도입 후 업무 효율 평균 60% 향상.',
-  alternates: { canonical: 'https://ideal-ai.co.kr/services' },
+  alternates: { canonical: 'https://ideal-tech.co.kr/services' },
   openGraph: {
     title: 'Ideal AI 서비스: 비즈니스를 바꾸는 4가지 AI 솔루션',
     description: 'AI 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅. 기획부터 배포까지 평균 8주.',
-    url: 'https://ideal-ai.co.kr/services',
+    url: 'https://ideal-tech.co.kr/services',
   },
 }
 
