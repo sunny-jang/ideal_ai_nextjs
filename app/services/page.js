@@ -219,6 +219,32 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="inner-section pt-0" aria-labelledby="service-faq-heading">
+        <div className="section-header">
+          <p className="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+          <h2 id="service-faq-heading">AI 프로젝트 <span>자주 묻는 질문</span></h2>
+          <p>도입 전 많이 확인하는 일정, 비용, 연동, 데이터 처리 방식을 정리했습니다.</p>
+        </div>
+        <div className="service-faq">
+          <details>
+            <summary>AI가 필요한지 아직 확실하지 않아도 상담할 수 있나요?</summary>
+            <p>가능합니다. 현재 업무와 데이터를 살펴보고 AI로 해결할 부분을 정합니다. 도입 전략이나 기술 검토만 필요한 경우 컨설팅부터 시작할 수도 있습니다.</p>
+          </details>
+          <details>
+            <summary>프로젝트 기간과 비용은 어떻게 정해지나요?</summary>
+            <p>요구사항과 데이터 준비 상태, 연동 범위에 따라 달라집니다. 먼저 목표와 범위를 정하고 PoC 또는 본 개발 일정을 제안합니다. 견적은 프로젝트 개요를 받아 확인합니다.</p>
+          </details>
+          <details>
+            <summary>기존 사내 시스템과 연결할 수 있나요?</summary>
+            <p>REST API, 데이터베이스, ERP, CRM 등 기존 시스템과의 연동 가능성을 검토합니다. 접근 권한과 데이터 흐름을 확인한 뒤 적합한 구성을 설계합니다.</p>
+          </details>
+          <details>
+            <summary>민감한 회사 데이터는 어떻게 처리하나요?</summary>
+            <p>프로젝트 시작 전에 데이터 처리 방식과 보안 요구사항을 합의합니다. 필요에 따라 로컬 모델, 온프레미스 또는 프라이빗 클라우드 구성을 검토할 수 있습니다.</p>
+          </details>
+        </div>
+      </section>
+
       {/* CTA DARK */}
       <div className="cta-dark" id="contact">
         <div>

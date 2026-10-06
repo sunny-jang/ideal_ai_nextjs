@@ -25,13 +25,13 @@ export const metadata = {
     siteName: 'Ideal AI',
     title: 'Ideal AI: 비즈니스를 바꾸는 AI, 직접 만듭니다',
     description: 'RAG, LLM, AI Agent, 업무 자동화. 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
-    images: [{ url: '/assets/og-image.png', width: 1200, height: 630, alt: 'Ideal AI' }],
+    images: [{ url: '/assets/logo_color.png', width: 1208, height: 248, alt: 'Ideal AI' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ideal AI: 비즈니스를 바꾸는 AI',
     description: 'RAG, LLM, AI Agent, 업무 자동화 전문. 기획부터 배포까지 평균 8주.',
-    images: ['/assets/og-image.png'],
+    images: ['/assets/logo_color.png'],
   },
   robots: {
     index: true,

@@ -1,20 +1,54 @@
 import Image from 'next/image'
 import HeroVisual from '@/components/HeroVisual'
 
+const homeTitle = 'Ideal AI | AI 제품 개발·업무 자동화·AI 컨설팅'
+const homeDescription = 'Ideal AI는 기업의 아이디어를 실제 AI 제품으로 만듭니다. RAG 챗봇과 AI 에이전트 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅을 기획부터 배포·운영까지 함께합니다.'
+const siteUrl = 'https://ideal-tech.co.kr'
+
+const siteStructuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'Ideal AI',
+      url: siteUrl,
+      logo: `${siteUrl}/assets/logo_color.png`,
+      description: homeDescription,
+      email: 'esunbest@gmail.com',
+      telephone: '+82-10-3541-9798',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: 'Ideal AI',
+      alternateName: '아이디얼 AI',
+      url: siteUrl,
+      inLanguage: 'ko-KR',
+      publisher: { '@id': `${siteUrl}/#organization` },
+    },
+  ],
+}
+
 export const metadata = {
-  title: 'Ideal AI: AI Solutions for the Ideal Future',
-  description: 'Ideal AI는 RAG, LLM, Agent, Automation 등 혁신 AI 기술로 당신의 아이디어를 AI 제품으로 실현합니다. 기획부터 배포까지 평균 8주.',
+  title: { absolute: homeTitle },
+  description: homeDescription,
   alternates: { canonical: 'https://ideal-tech.co.kr' },
   openGraph: {
-    title: 'Ideal AI: 비즈니스를 바꾸는 AI, 직접 만듭니다',
-    description: 'RAG, LLM, AI Agent, 업무 자동화. 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
-    url: 'https://ideal-tech.co.kr',
+    title: homeTitle,
+    description: homeDescription,
+    url: siteUrl,
+    images: [{ url: '/assets/logo_color.png', width: 1208, height: 248, alt: 'Ideal AI' }],
   },
 }
 
 export default function HomePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData).replace(/</g, '\\u003c') }}
+      />
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-copy">
@@ -28,10 +62,10 @@ export default function HomePage() {
             From Idea<br />
             to <span>Ideal AI</span>
           </h1>
-          <h2>당신의 아이디어를 가장 이상적인 AI 제품으로 실현합니다.</h2>
+          <h2>AI 제품 개발부터 업무 자동화까지, 아이디어를 실제 서비스로 만듭니다.</h2>
           <p className="description">
-            Ideal AI는 RAG, LLM, Agent, Automation 등 혁신 AI 기술을 기반으로
-            어떤 AI 프로젝트도 만들어낼 수 있는 기술 회사입니다.
+            Ideal AI는 RAG 챗봇과 AI 에이전트 개발, 업무 자동화, 데이터 엔지니어링,
+            AI 컨설팅을 기획부터 배포·운영까지 함께하는 기술 회사입니다.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#services">Our Services <span>→</span></a>
@@ -79,7 +113,7 @@ export default function HomePage() {
             아이디어 구상부터 기획, 개발, 배포, 운영까지<br />
             AI 제품의 전 과정을 함께합니다.
           </p>
-          <a href="#solutions">Learn More <span>→</span></a>
+          <a href="/solutions">Learn More <span>→</span></a>
         </div>
 
         <div className="service-grid">
@@ -87,28 +121,28 @@ export default function HomePage() {
             <div className="icon-img"><Image src="/assets/button1.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Product<br />Development</h4>
             <p>챗봇, RAG, Agent 등<br />다양한 AI 제품을 개발합니다.</p>
-            <a href="#">→</a>
+            <a href="/services#service-detail" aria-label="AI 제품 개발 자세히 보기">→</a>
           </article>
 
           <article className="service-card">
             <div className="icon-img"><Image src="/assets/button2.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Automation</h4>
             <p>업무 자동화와 프로세스 혁신으로<br />비즈니스 효율을 극대화합니다.</p>
-            <a href="#">→</a>
+            <a href="/services#service-detail" aria-label="AI 업무 자동화 자세히 보기">→</a>
           </article>
 
           <article className="service-card">
             <div className="icon-img"><Image src="/assets/button3.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>Data & AI<br />Engineering</h4>
             <p>데이터 수집, 가공, 모델링까지<br />안정적인 AI 인프라를 구축합니다.</p>
-            <a href="#">→</a>
+            <a href="/services#service-detail" aria-label="데이터 및 AI 엔지니어링 자세히 보기">→</a>
           </article>
 
           <article className="service-card">
             <div className="icon-img"><Image src="/assets/button4.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Consulting</h4>
             <p>전략 수립부터 기술 도입까지<br />AI 전환을 함께 설계합니다.</p>
-            <a href="#">→</a>
+            <a href="/services#service-detail" aria-label="AI 컨설팅 자세히 보기">→</a>
           </article>
         </div>
       </section>

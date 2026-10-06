@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Solutions | Ideal AI',
-  description: 'Ideal AI 솔루션: 산업별 AI 솔루션과 기술 스택',
+  title: '산업별 AI 솔루션: 금융·제조·유통·의료·법률·교육',
+  description: 'Ideal AI는 금융, 제조, 유통, 의료, 법률, 교육 분야의 업무에 맞춰 RAG 검색, AI 에이전트, 비전 AI, 자동화 솔루션을 설계합니다.',
+  alternates: { canonical: 'https://ideal-tech.co.kr/solutions' },
 }
 
 export default function SolutionsPage() {

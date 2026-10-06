@@ -761,6 +761,12 @@ html, body {
   max-width: 560px;
 }
 
+.service-faq { display: grid; gap: 12px; max-width: 900px; }
+.service-faq details { border: 1px solid rgba(101, 83, 183, .14); border-radius: 16px; background: #fff; padding: 0 22px; }
+.service-faq summary { cursor: pointer; font-size: 17px; font-weight: 700; line-height: 1.5; padding: 20px 26px 20px 0; }
+.service-faq summary:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
+.service-faq details p { color: var(--muted); line-height: 1.8; margin: 0; padding: 0 0 20px; }
+
 .inner-card {
   @apply border rounded-[22px] transition-transform;
   padding: 24px;
