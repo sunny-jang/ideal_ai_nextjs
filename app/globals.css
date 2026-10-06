@@ -512,6 +512,7 @@ html, body {
 
 .service-card {
   min-height: 260px;
+  display: block;
   @apply border rounded-[20px] transition-transform;
   padding: 20px;
   border-color: rgba(101, 83, 183, .1);
@@ -523,6 +524,11 @@ html, body {
 .service-card:hover {
   transform: translateY(-8px);
   @apply shadow-card-hover;
+}
+
+.service-card:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 4px;
 }
 
 .icon-img {
@@ -551,7 +557,7 @@ html, body {
   line-height: 1.7;
 }
 
-.service-card > a {
+.service-card-arrow {
   @apply grid place-items-center;
   width: 32px;
   height: 32px;
@@ -561,6 +567,8 @@ html, body {
   color: #6050ed;
   @apply shadow-icon;
 }
+
+.svc-card[id] { scroll-margin-top: 24px; }
 
 .cta {
   width: min(1420px, calc(100% - 64px));

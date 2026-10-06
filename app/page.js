@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import HeroVisual from '@/components/HeroVisual'
 
 const homeTitle = 'Ideal AI | AI 제품 개발·업무 자동화·AI 컨설팅'
@@ -117,33 +118,33 @@ export default function HomePage() {
         </div>
 
         <div className="service-grid">
-          <article className="service-card">
+          <Link className="service-card" href="/services#ai-product">
             <div className="icon-img"><Image src="/assets/button1.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Product<br />Development</h4>
             <p>챗봇, RAG, Agent 등<br />다양한 AI 제품을 개발합니다.</p>
-            <a href="/services#service-detail" aria-label="AI 제품 개발 자세히 보기">→</a>
-          </article>
+            <span className="service-card-arrow" aria-hidden="true">→</span>
+          </Link>
 
-          <article className="service-card">
+          <Link className="service-card" href="/services#ai-automation">
             <div className="icon-img"><Image src="/assets/button2.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Automation</h4>
             <p>업무 자동화와 프로세스 혁신으로<br />비즈니스 효율을 극대화합니다.</p>
-            <a href="/services#service-detail" aria-label="AI 업무 자동화 자세히 보기">→</a>
-          </article>
+            <span className="service-card-arrow" aria-hidden="true">→</span>
+          </Link>
 
-          <article className="service-card">
+          <Link className="service-card" href="/services#data-ai-engineering">
             <div className="icon-img"><Image src="/assets/button3.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>Data & AI<br />Engineering</h4>
             <p>데이터 수집, 가공, 모델링까지<br />안정적인 AI 인프라를 구축합니다.</p>
-            <a href="/services#service-detail" aria-label="데이터 및 AI 엔지니어링 자세히 보기">→</a>
-          </article>
+            <span className="service-card-arrow" aria-hidden="true">→</span>
+          </Link>
 
-          <article className="service-card">
+          <Link className="service-card" href="/services#ai-consulting">
             <div className="icon-img"><Image src="/assets/button4.png" alt="" width={64} height={64} style={{objectFit:'contain'}} /></div>
             <h4>AI Consulting</h4>
             <p>전략 수립부터 기술 도입까지<br />AI 전환을 함께 설계합니다.</p>
-            <a href="/services#service-detail" aria-label="AI 컨설팅 자세히 보기">→</a>
-          </article>
+            <span className="service-card-arrow" aria-hidden="true">→</span>
+          </Link>
         </div>
       </section>
 

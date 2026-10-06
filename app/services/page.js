@@ -44,7 +44,7 @@ export default function ServicesPage() {
 
         <div className="svc-card-grid" data-stagger="80">
           {/* 01 */}
-          <div className="svc-card">
+          <div className="svc-card" id="ai-product">
             <div className="svc-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
           </div>
 
           {/* 02 */}
-          <div className="svc-card">
+          <div className="svc-card" id="ai-automation">
             <div className="svc-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
           </div>
 
           {/* 03 */}
-          <div className="svc-card">
+          <div className="svc-card" id="data-ai-engineering">
             <div className="svc-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -100,7 +100,7 @@ export default function ServicesPage() {
           </div>
 
           {/* 04 */}
-          <div className="svc-card">
+          <div className="svc-card" id="ai-consulting">
             <div className="svc-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
