@@ -3,8 +3,8 @@ import Script from 'next/script'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ScrollObserver from '@/components/ScrollObserver'
-import { OG_IMAGE, SITE_URL as BASE } from '@/lib/seo'
 
+const BASE = 'https://ideal-tech.co.kr'
 const GA_MEASUREMENT_ID = 'G-VZGF5EVHZH'
 
 export const metadata = {
@@ -24,13 +24,13 @@ export const metadata = {
     siteName: 'Ideal AI',
     title: 'Ideal AI: 비즈니스를 바꾸는 AI, 직접 만듭니다',
     description: 'RAG, LLM, AI Agent, 업무 자동화. 기획부터 배포까지 평균 8주. 수치로 증명된 AI 개발 파트너.',
-    images: [OG_IMAGE],
+    images: [{ url: '/assets/logo_color.png', width: 1208, height: 248, alt: 'Ideal AI' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ideal AI: 비즈니스를 바꾸는 AI',
     description: 'RAG, LLM, AI Agent, 업무 자동화 전문. 기획부터 배포까지 평균 8주.',
-    images: [OG_IMAGE.url],
+    images: ['/assets/logo_color.png'],
   },
   robots: {
     index: true,
@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <head>
+        {/* Google Tag Manager */}
         <Script
           id="google-tag-manager"
           strategy="beforeInteractive"
@@ -57,23 +58,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PF74594Z');`,
           }}
         />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
+        {/* End Google Tag Manager */}
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
         <Script
           id="google-analytics"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}');`,
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `,
           }}
         />
+        {/* End Google Analytics */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
         />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
         <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF74594Z" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PF74594Z"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
         </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <div className="site-shell">
           <ScrollObserver />
           <Header />

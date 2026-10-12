@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://ideal-ai.co.kr/sitemap.xml',
+    sitemap: 'https://ideal-tech.co.kr/sitemap.xml',
   }
 }

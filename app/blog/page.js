@@ -4,11 +4,11 @@ import BlogList from './BlogList'
 export const metadata = {
   title: 'Blog: AI 실무자가 쓰는 진짜 기술 블로그',
   description: '마케팅 글이 아닙니다. RAG, LLM, AI Agent, 업무 자동화 프로젝트에서 실제로 부딪힌 문제, 실험 결과, 실패 경험. 현장에서 배운 것을 그대로 씁니다.',
-  alternates: { canonical: 'https://ideal-ai.co.kr/blog' },
+  alternates: { canonical: 'https://ideal-tech.co.kr/blog' },
   openGraph: {
     title: 'Ideal AI Blog: AI 실무 인사이트',
     description: 'RAG, LLM 파인튜닝, 멀티에이전트, 자동화 워크플로우. AI 실무자의 진짜 기술 블로그.',
-    url: 'https://ideal-ai.co.kr/blog',
+    url: 'https://ideal-tech.co.kr/blog',
   },
 }
 

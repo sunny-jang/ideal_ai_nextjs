@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { posts, getPost } from '@/lib/posts'
 
+const SITE_URL = 'https://ideal-tech.co.kr'
+
 export async function generateStaticParams() {
   return posts.map(p => ({ id: String(p.id) }))
 }
@@ -11,8 +13,18 @@ export async function generateMetadata({ params }) {
   const post = getPost(params.id)
   if (!post) return {}
   return {
-    title: `${post.title} | Ideal AI Blog`,
+    title: { absolute: `${post.title} | Ideal AI Blog` },
     description: post.summary,
+    alternates: { canonical: `${SITE_URL}/blog/${post.id}` },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.summary,
+      url: `${SITE_URL}/blog/${post.id}`,
+      publishedTime: post.date.replace(/\./g, '-'),
+      authors: [post.author],
+      ...(post.thumb ? { images: [{ url: post.thumb, alt: post.title }] } : {}),
+    },
   }
 }
 
@@ -21,9 +33,25 @@ export default function BlogPostPage({ params }) {
   if (!post) notFound()
 
   const others = posts.filter(p => p.id !== post.id && p.category === post.category).slice(0, 2)
+  const articleStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.summary,
+    datePublished: post.date.replace(/\./g, '-'),
+    inLanguage: 'ko-KR',
+    mainEntityOfPage: `${SITE_URL}/blog/${post.id}`,
+    author: { '@type': 'Person', name: post.author, url: `${SITE_URL}/about` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    ...(post.thumb ? { image: `${SITE_URL}${post.thumb}` } : {}),
+  }
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData).replace(/</g, '\\u003c') }}
+      />
       {/* ARTICLE HERO */}
       <section className="blog-post-hero">
         <div className="blog-post-hero-inner">
@@ -39,6 +67,7 @@ export default function BlogPostPage({ params }) {
           </div>
           <h1>{post.title}</h1>
           <p className="blog-post-summary">{post.summary}</p>
+          <p className="blog-date-v2">작성: {post.author} · {post.date}</p>
         </div>
       </section>
 
