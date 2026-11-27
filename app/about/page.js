@@ -64,8 +64,8 @@ const BuildingIcon = () => (
 export default function AboutPage() {
   const team = [
     { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문 · 개발 경력 11년', note: '석사논문 「의도 기반 다중 피처 RAG 리랭커 연구」', degreeImg: '/assets/degree_eunseon.png', profileImg: '/assets/eunseon_profile.jpeg' },
-    { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', degreeImg: '/assets/degree_youjung.png', profileImg: '/assets/youjung_profile.png' },
-    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: '/assets/degree_jungyu.jpg', profileImg: '/assets/jungyu_profile.jpg' },
+    { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', note: '석사논문 「PSA(Personalized Stability Algorithm)를 적용한 개인화 의료 LLM 챗봇의 안정성 향상」', degreeImg: '/assets/degree_youjung.png', profileImg: '/assets/youjung_profile.png' },
+    { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', note: '석사논문 「PREGAPS: Policy-based RL for Real-time Airport Gate Assignment」', degreeImg: '/assets/degree_jungyu.jpg', profileImg: '/assets/jungyu_profile.jpg' },
   ]
 
   const expertise = [
