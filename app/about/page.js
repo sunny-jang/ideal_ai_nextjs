@@ -118,6 +118,10 @@ export default function AboutPage() {
         <div className="page-hero-inner">
           <p className="eyebrow">WHO WE ARE</p>
           <h1>연구실에서 프로덕션까지,<br /><span>끝까지 책임지는 팀</span></h1>
+          <div className="about-cred">
+            <span className="about-cred-badge">IRIS</span>
+            <p><strong>IRIS 등록 연구기관</strong> · 범부처통합연구지원시스템에 연구기관으로 등록되어 국가 R&amp;D 과제 수행이 가능합니다.</p>
+          </div>
           <p className="lead">
             한양대학교 AI 석사 연구원들이 창업했습니다. 논문을 쓰는 연구자이자,
             실제 비즈니스 문제를 푸는 엔지니어로서 이론과 실무 사이의 간극을 없앱니다.
@@ -167,10 +171,6 @@ export default function AboutPage() {
             </div>
             <div><div className="astat-num"><CountUp to={100} suffix="%" /></div><div className="astat-lbl">석사급 직접 참여</div></div>
           </div>
-        </div>
-        <div className="about-cred">
-          <span className="about-cred-badge">IRIS</span>
-          <p><strong>IRIS 등록 연구기관</strong> · 범부처통합연구지원시스템에 연구기관으로 등록되어 국가 R&amp;D 과제 수행이 가능합니다.</p>
         </div>
       </section>
 
