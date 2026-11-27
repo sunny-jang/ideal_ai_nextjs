@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { posts, getPost } from '@/lib/posts'
+import { buildMetadata } from '@/lib/seo'
 
 const SITE_URL = 'https://ideal-tech.co.kr'
 
@@ -12,20 +13,20 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const post = getPost(params.id)
   if (!post) return {}
-  return {
+
+  // 글마다 썸네일을 og:image 로 내보내야 카톡·슬랙에 그 글의 이미지가 뜬다.
+  return buildMetadata({
     title: { absolute: `${post.title} | Ideal AI Blog` },
+    ogTitle: post.title,
     description: post.summary,
-    alternates: { canonical: `${SITE_URL}/blog/${post.id}` },
+    path: `/blog/${post.id}`,
+    type: 'article',
+    images: post.thumb ? [{ url: post.thumb, alt: post.title }] : undefined,
     openGraph: {
-      type: 'article',
-      title: post.title,
-      description: post.summary,
-      url: `${SITE_URL}/blog/${post.id}`,
-      publishedTime: post.date.replace(/\./g, '-'),
-      authors: [post.author],
-      ...(post.thumb ? { images: [{ url: post.thumb, alt: post.title }] } : {}),
+      publishedTime: new Date(post.date.replace(/\./g, '-')).toISOString(),
+      authors: post.author ? [post.author] : undefined,
     },
-  }
+  })
 }
 
 export default function BlogPostPage({ params }) {
@@ -159,7 +160,7 @@ export default function BlogPostPage({ params }) {
           <p className="eyebrow">STAY UPDATED</p>
           <h3>AI 실무 인사이트를<br />가장 먼저 받아보세요.</h3>
         </div>
-        <a href="mailto:esunbest@gmail.com">뉴스레터 구독 <span>→</span></a>
+        <a href="mailto:eunseon@ideal-tech.co.kr">뉴스레터 구독 <span>→</span></a>
       </section>
     </main>
   )

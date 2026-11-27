@@ -1,8 +1,10 @@
-export const metadata = {
+import { buildMetadata } from '@/lib/seo'
+export const metadata = buildMetadata({
   title: '산업별 AI 솔루션: 금융·제조·유통·의료·법률·교육',
   description: 'Ideal AI는 금융, 제조, 유통, 의료, 법률, 교육 분야의 업무에 맞춰 RAG 검색, AI 에이전트, 비전 AI, 자동화 솔루션을 설계합니다.',
-  alternates: { canonical: 'https://ideal-tech.co.kr/solutions' },
-}
+  path: '/solutions',
+  ogTitle: 'Ideal AI 솔루션: 산업별 AI 솔루션: 금융·제조·유통·의료·법률·교육',
+})
 
 export default function SolutionsPage() {
   return (
@@ -218,7 +220,7 @@ export default function SolutionsPage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
+        <a href="mailto:eunseon@ideal-tech.co.kr">Start a Project <span>→</span></a>
       </section>
     </main>
   )

@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import HeroVisual from '@/components/HeroVisual'
+import { buildMetadata, SITE_URL } from '@/lib/seo'
 
 const homeTitle = 'Ideal AI | AI 제품 개발·업무 자동화·AI 컨설팅'
 const homeDescription = 'Ideal AI는 기업의 아이디어를 실제 AI 제품으로 만듭니다. RAG 챗봇과 AI 에이전트 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅을 기획부터 배포·운영까지 함께합니다.'
-const siteUrl = 'https://ideal-tech.co.kr'
+const siteUrl = SITE_URL
 
 const siteStructuredData = {
   '@context': 'https://schema.org',
@@ -12,12 +13,14 @@ const siteStructuredData = {
     {
       '@type': 'Organization',
       '@id': `${siteUrl}/#organization`,
-      name: 'Ideal AI',
+      name: 'Ideal Tech',
+      legalName: '아이디얼테크',
+      alternateName: ['아이디얼테크', 'Ideal AI'],
       url: siteUrl,
       logo: `${siteUrl}/assets/logo_color.png`,
       description: homeDescription,
-      email: 'esunbest@gmail.com',
-      telephone: '+82-10-3541-9798',
+      email: 'eunseon@ideal-tech.co.kr',
+      telephone: '+82-10-7652-9798',
     },
     {
       '@type': 'WebSite',
@@ -31,17 +34,13 @@ const siteStructuredData = {
   ],
 }
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: { absolute: homeTitle },
   description: homeDescription,
-  alternates: { canonical: 'https://ideal-tech.co.kr' },
-  openGraph: {
-    title: homeTitle,
-    description: homeDescription,
-    url: siteUrl,
-    images: [{ url: '/assets/logo_color.png', width: 1208, height: 248, alt: 'Ideal AI' }],
-  },
-}
+  path: '',
+  ogTitle: homeTitle,
+  ogDescription: homeDescription,
+})
 
 export default function HomePage() {
   return (
@@ -71,7 +70,7 @@ export default function HomePage() {
           <div className="hero-actions">
             <a className="btn btn-primary" href="#services">Our Services <span>→</span></a>
             <a className="btn btn-secondary" href="#cases">View Case Studies <span>→</span></a>
-            <a className="btn btn-phone" href="tel:+821035419798">📞 전화 문의</a>
+            <a className="btn btn-phone" href="tel:+821076529798">📞 전화 문의</a>
           </div>
         </div>
 
@@ -154,7 +153,7 @@ export default function HomePage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
+        <a href="mailto:eunseon@ideal-tech.co.kr">Start a Project <span>→</span></a>
       </section>
     </main>
   )

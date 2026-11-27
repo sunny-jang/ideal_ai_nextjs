@@ -1,16 +1,14 @@
 import Image from 'next/image'
 import CountUp from '@/components/CountUp'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Case Studies: AI로 해결 가능한 비즈니스 문제들',
   description: '금융, 제조, 이커머스, 의료, 법률 등 산업별로 AI가 실제로 해결할 수 있는 문제와 접근 방식을 정리했습니다.',
-  alternates: { canonical: 'https://ideal-tech.co.kr/cases' },
-  openGraph: {
-    title: 'Ideal AI 성공 사례: 수치로 증명된 AI 프로젝트',
-    description: '은행 내규 챗봇, 이커머스 자동화, 법률 문서 분석 등 실제 프로젝트 케이스 스터디.',
-    url: 'https://ideal-tech.co.kr/cases',
-  },
-}
+  path: '/cases',
+  ogTitle: 'Ideal AI 성공 사례: 수치로 증명된 AI 프로젝트',
+  ogDescription: '은행 내규 챗봇, 이커머스 자동화, 법률 문서 분석 등 실제 프로젝트 케이스 스터디.',
+})
 
 export default function CasesPage() {
   return (
@@ -272,7 +270,7 @@ export default function CasesPage() {
           <p className="eyebrow">BUILD YOUR NEXT AI PRODUCT</p>
           <h3>아이디어가 있다면,<br />Ideal AI와 시작하세요.</h3>
         </div>
-        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
+        <a href="mailto:eunseon@ideal-tech.co.kr">Start a Project <span>→</span></a>
       </section>
     </main>
   )

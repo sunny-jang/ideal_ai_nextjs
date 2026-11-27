@@ -1,16 +1,14 @@
 import Image from 'next/image'
 import CountUp from '@/components/CountUp'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Services: AI 개발 · 자동화 · 컨설팅',
   description: 'AI Product Development, Process Automation, Data Engineering, AI Consulting. 기획부터 배포까지 평균 8주, 도입 후 업무 효율 평균 60% 향상.',
-  alternates: { canonical: 'https://ideal-tech.co.kr/services' },
-  openGraph: {
-    title: 'Ideal AI 서비스: 비즈니스를 바꾸는 4가지 AI 솔루션',
-    description: 'AI 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅. 기획부터 배포까지 평균 8주.',
-    url: 'https://ideal-tech.co.kr/services',
-  },
-}
+  path: '/services',
+  ogTitle: 'Ideal AI 서비스: 비즈니스를 바꾸는 4가지 AI 솔루션',
+  ogDescription: 'AI 개발, 업무 자동화, 데이터 엔지니어링, AI 컨설팅. 기획부터 배포까지 평균 8주.',
+})
 
 export default function ServicesPage() {
   return (
@@ -254,7 +252,7 @@ export default function ServicesPage() {
         <div className="cta-dark-visual" aria-hidden="true">
           <Image src="/assets/service_bototm.png" alt="" width={400} height={300} style={{width:'100%', height:'auto'}} />
         </div>
-        <a href="mailto:esunbest@gmail.com">Start a Project <span>→</span></a>
+        <a href="mailto:eunseon@ideal-tech.co.kr">Start a Project <span>→</span></a>
       </div>
     </main>
   )

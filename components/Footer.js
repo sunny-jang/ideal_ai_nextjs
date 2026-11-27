@@ -30,11 +30,11 @@ export default function Footer() {
             한양대 AI 석사 연구진이 만드는<br />
             엔터프라이즈 AI 솔루션.
           </p>
-          <a href="mailto:esunbest@gmail.com" className="footer-email">
-            esunbest@gmail.com
+          <a href="mailto:eunseon@ideal-tech.co.kr" className="footer-email">
+            eunseon@ideal-tech.co.kr
           </a>
-          <a href="tel:+821035419798" className="footer-email" style={{marginTop: 6}}>
-            010-3541-9798
+          <a href="tel:+821076529798" className="footer-email" style={{marginTop: 6}}>
+            010-7652-9798
           </a>
         </div>
 
@@ -55,8 +55,11 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} Ideal AI. All rights reserved.</span>
-        <span>esunbest@gmail.com · 010-3541-9798</span>
+        <span>© {new Date().getFullYear()} Ideal Tech. All rights reserved.</span>
+        <div className="footer-biz">
+          <span>상호 아이디얼테크 · 대표 장은선 · 사업자등록번호 597-02-03830</span>
+          <span>eunseon@ideal-tech.co.kr · 010-7652-9798</span>
+        </div>
       </div>
     </footer>
   )

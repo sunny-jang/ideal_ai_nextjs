@@ -1,16 +1,14 @@
 import Image from 'next/image'
 import CountUp from '@/components/CountUp'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'About: 한양대 AI 석사 출신 전문가 팀',
   description: '한양대학교 AI 공학대학원 출신 석사 전문가들이 모여 만든 Ideal AI. NLP, RAG, LLM 파인튜닝, MLOps 전공 연구 경험을 실무에 직접 적용합니다.',
-  alternates: { canonical: 'https://ideal-tech.co.kr/about' },
-  openGraph: {
-    title: 'Ideal AI 팀 소개: 연구실에서 프로덕션까지 끝까지 책임지는 팀',
-    description: '한양대 AI 공학대학원 출신 석사 전문가 팀. NLP · RAG · LLM 파인튜닝 · MLOps 전공.',
-    url: 'https://ideal-tech.co.kr/about',
-  },
-}
+  path: '/about',
+  ogTitle: 'Ideal AI 팀 소개: 연구실에서 프로덕션까지 끝까지 책임지는 팀',
+  ogDescription: '한양대 AI 공학대학원 출신 석사 전문가 팀. NLP · RAG · LLM 파인튜닝 · MLOps 전공.',
+})
 
 const PersonIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -65,7 +63,7 @@ const BuildingIcon = () => (
 
 export default function AboutPage() {
   const team = [
-    { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문', degreeImg: '/assets/degree_eunseon.png', profileImg: '/assets/eunseon_profile.jpeg' },
+    { name: '장은선', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: 'RAG 챗봇 구축 전문 · 개발 경력 11년', note: '석사논문 「의도 기반 다중 피처 RAG 리랭커 연구」', degreeImg: '/assets/degree_eunseon.png', profileImg: '/assets/eunseon_profile.jpeg' },
     { name: '홍유정', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '개인화 AI·추천 시스템 전문', degreeImg: '/assets/degree_youjung.png', profileImg: '/assets/youjung_profile.png' },
     { name: '김준규', role: 'AI Engineer', degree: '한양대 AI 공학 석사', spec: '강화학습·에이전트 시스템 전문', degreeImg: '/assets/degree_jungyu.jpg', profileImg: '/assets/jungyu_profile.jpg' },
   ]
@@ -143,7 +141,7 @@ export default function AboutPage() {
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
             </div>
-            <div><div className="astat-num"><CountUp to={3} suffix="년+" /></div><div className="astat-lbl">AI 연구 경력</div></div>
+            <div><div className="astat-num"><CountUp to={11} suffix="년+" /></div><div className="astat-lbl">소프트웨어 개발 경력</div></div>
           </div>
           <div className="astat-item">
             <div className="astat-icon">
@@ -168,6 +166,44 @@ export default function AboutPage() {
               </svg>
             </div>
             <div><div className="astat-num"><CountUp to={100} suffix="%" /></div><div className="astat-lbl">석사급 직접 참여</div></div>
+          </div>
+        </div>
+        <div className="about-cred">
+          <span className="about-cred-badge">IRIS</span>
+          <p><strong>IRIS 등록 연구기관</strong> · 범부처통합연구지원시스템에 연구기관으로 등록되어 국가 R&amp;D 과제 수행이 가능합니다.</p>
+        </div>
+      </section>
+
+      {/* COMPANY OVERVIEW + PATENT */}
+      <section className="inner-section pt-0">
+        <div className="section-header">
+          <p className="eyebrow">COMPANY &amp; CORE TECHNOLOGY</p>
+          <h2>회사 개요와 <span>핵심 기술</span></h2>
+        </div>
+        <div className="about-company">
+          <dl className="about-overview">
+            <div><dt>상호</dt><dd>아이디얼테크 (Ideal Tech)</dd></div>
+            <div><dt>대표</dt><dd>장은선</dd></div>
+            <div><dt>개업일</dt><dd>2026년 11월 17일</dd></div>
+            <div><dt>사업 라인</dt><dd><strong>Ideal AI</strong> · AI 솔루션 · 업무 자동화 · 예측/이상탐지 모델<br /><strong>Ideal Web</strong> · 웹 서비스 · SaaS · 운영 플랫폼 · 시스템 연동</dd></div>
+            <div><dt>연구기관</dt><dd>IRIS 등록 연구기관</dd></div>
+            <div><dt>기술 자문</dt><dd>한양대학교 공학대학원 컴퓨터공학과 교수 외부 기술자문</dd></div>
+          </dl>
+
+          <div className="about-patent">
+            <div className="about-patent-head">
+              <span className="about-patent-tag">PATENT · 특허 출원</span>
+              <h3>질의 의도 조건부 보정층을 이용한 검색 증강 생성용 후보 문서 재순위화 방법, 시스템 및 기록매체</h3>
+              <p className="about-patent-meta">출원번호 10-2026-0224122 · 출원일 2026.11.11 · 출원 완료(등록 심사 전)</p>
+            </div>
+            <ol className="about-patent-flow">
+              <li><strong>사용자 질의</strong><span>Query</span></li>
+              <li><strong>1차 검색</strong><span>후보 문서 Top-K</span></li>
+              <li className="is-core"><strong>의도 조건부 보정층</strong><span>핵심 · 특허 출원</span></li>
+              <li><strong>재순위화</strong><span>관련 문서를 상위로</span></li>
+              <li><strong>LLM 답변</strong><span>근거 품질 향상</span></li>
+            </ol>
+            <p className="about-patent-note">석사 연구(RAG 리랭커)를 바탕으로 한 기술로, 사내 지식 검색 · 문서 질의응답 · AI 챗봇의 검색 정확도를 높이는 데 활용합니다.</p>
           </div>
         </div>
       </section>
@@ -214,7 +250,7 @@ export default function AboutPage() {
               )}
               <div className="tcv2-name">{member.name}</div>
               <div className="tcv2-role">{member.role}</div>
-              <div className="tcv2-bio">{member.degree}<br />{member.spec}</div>
+              <div className="tcv2-bio">{member.degree}<br />{member.spec}{member.note && <><br /><span className="tcv2-note">{member.note}</span></>}</div>
               <div className="tcv2-degree-placeholder" style={{position:'relative'}}>
                 {member.degreeImg
                   ? <Image src={member.degreeImg} alt={`${member.name} 학위증`} fill style={{objectFit:'contain', borderRadius:10}} sizes="(max-width: 768px) 90vw, 400px" />
@@ -309,7 +345,7 @@ export default function AboutPage() {
           <p className="eyebrow">LET&apos;S BUILD THE FUTURE</p>
           <h3>함께 성장할<br />팀원과 파트너를 찾습니다.</h3>
         </div>
-        <a className="btn-cta-outline" href="mailto:esunbest@gmail.com">연락하기 <span>→</span></a>
+        <a className="btn-cta-outline" href="mailto:eunseon@ideal-tech.co.kr">연락하기 <span>→</span></a>
       </div>
     </main>
   )

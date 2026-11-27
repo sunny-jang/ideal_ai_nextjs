@@ -16,7 +16,7 @@
  */
 
 // 문의 알림을 받을 이메일 주소
-const NOTIFY_EMAIL = "esunbest@gmail.com";
+const NOTIFY_EMAIL = "eunseon@ideal-tech.co.kr";
 
 // 문의 폼 헤더
 const HEADERS = ["접수시각", "이름", "연락처", "이메일", "유입페이지", "문의내용"];
