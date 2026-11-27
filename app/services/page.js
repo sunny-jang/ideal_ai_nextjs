@@ -133,40 +133,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* COMPANY OVERVIEW + PATENT */}
-      <section className="inner-section pt-0">
-        <div className="section-header">
-          <p className="eyebrow">COMPANY &amp; CORE TECHNOLOGY</p>
-          <h2>회사 개요와 <span>핵심 기술</span></h2>
-        </div>
-        <div className="about-company">
-          <dl className="about-overview">
-            <div><dt>상호</dt><dd>아이디얼테크 (Ideal Tech)</dd></div>
-            <div><dt>대표</dt><dd>장은선</dd></div>
-            <div><dt>개업일</dt><dd>2026년 11월 17일</dd></div>
-            <div><dt>사업 라인</dt><dd><strong>Ideal AI</strong> · AI 솔루션 · 업무 자동화 · 예측/이상탐지 모델<br /><strong>Ideal Web</strong> · 웹 서비스 · SaaS · 운영 플랫폼 · 시스템 연동</dd></div>
-            <div><dt>연구기관</dt><dd>IRIS 등록 연구기관</dd></div>
-            <div><dt>기술 자문</dt><dd>한양대학교 공학대학원 컴퓨터공학과 교수 외부 기술자문</dd></div>
-          </dl>
-
-          <div className="about-patent">
-            <div className="about-patent-head">
-              <span className="about-patent-tag">PATENT · 특허 출원</span>
-              <h3>질의 의도 조건부 보정층을 이용한 검색 증강 생성용 후보 문서 재순위화 방법, 시스템 및 기록매체</h3>
-              <p className="about-patent-meta">출원번호 10-2026-0224122 · 출원일 2026.11.11 · 출원 완료(등록 심사 전)</p>
-            </div>
-            <ol className="about-patent-flow">
-              <li><strong>사용자 질의</strong><span>Query</span></li>
-              <li><strong>1차 검색</strong><span>후보 문서 Top-K</span></li>
-              <li className="is-core"><strong>의도 조건부 보정층</strong><span>핵심 · 특허 출원</span></li>
-              <li><strong>재순위화</strong><span>관련 문서를 상위로</span></li>
-              <li><strong>LLM 답변</strong><span>근거 품질 향상</span></li>
-            </ol>
-            <p className="about-patent-note">석사 연구(RAG 리랭커)를 바탕으로 한 기술로, 사내 지식 검색 · 문서 질의응답 · AI 챗봇의 검색 정확도를 높이는 데 활용합니다.</p>
-          </div>
-        </div>
-      </section>
-
       {/* PROCESS — TIMELINE */}
       <section className="inner-section pt-0">
         <div className="section-header">
